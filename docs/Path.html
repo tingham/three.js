@@ -1,0 +1,530 @@
+<!DOCTYPE html>  <html> <head>   <title>Path.js</title>   <meta http-equiv="content-type" content="text/html; charset=UTF-8">   <link rel="stylesheet" media="all" href="docco.css" /> </head> <body>   <div id="container">     <div id="background"></div>            <div id="jump_to">         Jump To &hellip;         <div id="jump_wrapper">           <div id="jump_page">                                           <a class="source" href="Three.html">                 Three.js               </a>                                           <a class="source" href="Camera.html">                 Camera.js               </a>                                           <a class="source" href="OrthographicCamera.html">                 OrthographicCamera.js               </a>                                           <a class="source" href="PerspectiveCamera.html">                 PerspectiveCamera.js               </a>                                           <a class="source" href="Clock.html">                 Clock.js               </a>                                           <a class="source" href="Color.html">                 Color.js               </a>                                           <a class="source" href="Edge.html">                 Edge.js               </a>                                           <a class="source" href="Face3.html">                 Face3.js               </a>                                           <a class="source" href="Face4.html">                 Face4.js               </a>                                           <a class="source" href="Geometry.html">                 Geometry.js               </a>                                           <a class="source" href="Math.html">                 Math.js               </a>                                           <a class="source" href="Matrix3.html">                 Matrix3.js               </a>                                           <a class="source" href="Matrix4.html">                 Matrix4.js               </a>                                           <a class="source" href="Object3D.html">                 Object3D.js               </a>                                           <a class="source" href="Projector.html">                 Projector.js               </a>                                           <a class="source" href="Quaternion.html">                 Quaternion.js               </a>                                           <a class="source" href="Ray.html">                 Ray.js               </a>                                           <a class="source" href="Rectangle.html">                 Rectangle.js               </a>                                           <a class="source" href="Spline.html">                 Spline.js               </a>                                           <a class="source" href="UV.html">                 UV.js               </a>                                           <a class="source" href="Vector2.html">                 Vector2.js               </a>                                           <a class="source" href="Vector3.html">                 Vector3.js               </a>                                           <a class="source" href="Vector4.html">                 Vector4.js               </a>                                           <a class="source" href="Vertex.html">                 Vertex.js               </a>                                           <a class="source" href="ColorUtils.html">                 ColorUtils.js               </a>                                           <a class="source" href="GeometryUtils.html">                 GeometryUtils.js               </a>                                           <a class="source" href="ImageUtils.html">                 ImageUtils.js               </a>                                           <a class="source" href="SceneUtils.html">                 SceneUtils.js               </a>                                           <a class="source" href="ShaderUtils.html">                 ShaderUtils.js               </a>                                           <a class="source" href="Animation.html">                 Animation.js               </a>                                           <a class="source" href="AnimationHandler.html">                 AnimationHandler.js               </a>                                           <a class="source" href="AnimationMorphTarget.html">                 AnimationMorphTarget.js               </a>                                           <a class="source" href="CombinedCamera.html">                 CombinedCamera.js               </a>                                           <a class="source" href="CubeCamera.html">                 CubeCamera.js               </a>                                           <a class="source" href="FirstPersonCamera.html">                 FirstPersonCamera.js               </a>                                           <a class="source" href="FlyCamera.html">                 FlyCamera.js               </a>                                           <a class="source" href="PathCamera.html">                 PathCamera.js               </a>                                           <a class="source" href="RollCamera.html">                 RollCamera.js               </a>                                           <a class="source" href="TrackballCamera.html">                 TrackballCamera.js               </a>                                           <a class="source" href="FirstPersonControls.html">                 FirstPersonControls.js               </a>                                           <a class="source" href="FlyControls.html">                 FlyControls.js               </a>                                           <a class="source" href="PathControls.html">                 PathControls.js               </a>                                           <a class="source" href="RollControls.html">                 RollControls.js               </a>                                           <a class="source" href="TrackballControls.html">                 TrackballControls.js               </a>                                           <a class="source" href="Curve.html">                 Curve.js               </a>                                           <a class="source" href="CurvePath.html">                 CurvePath.js               </a>                                           <a class="source" href="Path.html">                 Path.js               </a>                                           <a class="source" href="Shape.html">                 Shape.js               </a>                                           <a class="source" href="TextPath.html">                 TextPath.js               </a>                                           <a class="source" href="CubeGeometry.html">                 CubeGeometry.js               </a>                                           <a class="source" href="CylinderGeometry.html">                 CylinderGeometry.js               </a>                                           <a class="source" href="ExtrudeGeometry.html">                 ExtrudeGeometry.js               </a>                                           <a class="source" href="IcosahedronGeometry.html">                 IcosahedronGeometry.js               </a>                                           <a class="source" href="LatheGeometry.html">                 LatheGeometry.js               </a>                                           <a class="source" href="OctahedronGeometry.html">                 OctahedronGeometry.js               </a>                                           <a class="source" href="PlaneGeometry.html">                 PlaneGeometry.js               </a>                                           <a class="source" href="SphereGeometry.html">                 SphereGeometry.js               </a>                                           <a class="source" href="TextGeometry.html">                 TextGeometry.js               </a>                                           <a class="source" href="TorusGeometry.html">                 TorusGeometry.js               </a>                                           <a class="source" href="TorusKnotGeometry.html">                 TorusKnotGeometry.js               </a>                                           <a class="source" href="BinaryLoader.html">                 BinaryLoader.js               </a>                                           <a class="source" href="ColladaLoader.html">                 ColladaLoader.js               </a>                                           <a class="source" href="JSONLoader.html">                 JSONLoader.js               </a>                                           <a class="source" href="Loader.html">                 Loader.js               </a>                                           <a class="source" href="SceneLoader.html">                 SceneLoader.js               </a>                                           <a class="source" href="UTF8Loader.html">                 UTF8Loader.js               </a>                                           <a class="source" href="SubdivisionModifier.html">                 SubdivisionModifier.js               </a>                                           <a class="source" href="Axes.html">                 Axes.js               </a>                                           <a class="source" href="MarchingCubes.html">                 MarchingCubes.js               </a>                                           <a class="source" href="AnaglyphWebGLRenderer.html">                 AnaglyphWebGLRenderer.js               </a>                                           <a class="source" href="CrosseyedWebGLRenderer.html">                 CrosseyedWebGLRenderer.js               </a>                                           <a class="source" href="ParallaxBarrierWebGLRenderer.html">                 ParallaxBarrierWebGLRenderer.js               </a>                                           <a class="source" href="AmbientLight.html">                 AmbientLight.js               </a>                                           <a class="source" href="DirectionalLight.html">                 DirectionalLight.js               </a>                                           <a class="source" href="Light.html">                 Light.js               </a>                                           <a class="source" href="PointLight.html">                 PointLight.js               </a>                                           <a class="source" href="SpotLight.html">                 SpotLight.js               </a>                                           <a class="source" href="LineBasicMaterial.html">                 LineBasicMaterial.js               </a>                                           <a class="source" href="Material.html">                 Material.js               </a>                                           <a class="source" href="MeshBasicMaterial.html">                 MeshBasicMaterial.js               </a>                                           <a class="source" href="MeshDepthMaterial.html">                 MeshDepthMaterial.js               </a>                                           <a class="source" href="MeshFaceMaterial.html">                 MeshFaceMaterial.js               </a>                                           <a class="source" href="MeshLambertMaterial.html">                 MeshLambertMaterial.js               </a>                                           <a class="source" href="MeshNormalMaterial.html">                 MeshNormalMaterial.js               </a>                                           <a class="source" href="MeshPhongMaterial.html">                 MeshPhongMaterial.js               </a>                                           <a class="source" href="MeshShaderMaterial.html">                 MeshShaderMaterial.js               </a>                                           <a class="source" href="ParticleBasicMaterial.html">                 ParticleBasicMaterial.js               </a>                                           <a class="source" href="ParticleCanvasMaterial.html">                 ParticleCanvasMaterial.js               </a>                                           <a class="source" href="ParticleDOMMaterial.html">                 ParticleDOMMaterial.js               </a>                                           <a class="source" href="ShaderMaterial.html">                 ShaderMaterial.js               </a>                                           <a class="source" href="Bone.html">                 Bone.js               </a>                                           <a class="source" href="LOD.html">                 LOD.js               </a>                                           <a class="source" href="Line.html">                 Line.js               </a>                                           <a class="source" href="Mesh.html">                 Mesh.js               </a>                                           <a class="source" href="MorphAnimMesh.html">                 MorphAnimMesh.js               </a>                                           <a class="source" href="Particle.html">                 Particle.js               </a>                                           <a class="source" href="ParticleSystem.html">                 ParticleSystem.js               </a>                                           <a class="source" href="Ribbon.html">                 Ribbon.js               </a>                                           <a class="source" href="SkinnedMesh.html">                 SkinnedMesh.js               </a>                                           <a class="source" href="Sprite.html">                 Sprite.js               </a>                                           <a class="source" href="CanvasRenderer.html">                 CanvasRenderer.js               </a>                                           <a class="source" href="DOMRenderer.html">                 DOMRenderer.js               </a>                                           <a class="source" href="SVGRenderer.html">                 SVGRenderer.js               </a>                                           <a class="source" href="WebGLRenderTarget.html">                 WebGLRenderTarget.js               </a>                                           <a class="source" href="WebGLRenderTargetCube.html">                 WebGLRenderTargetCube.js               </a>                                           <a class="source" href="WebGLRenderer.html">                 WebGLRenderer.js               </a>                                           <a class="source" href="WebGLShaders.html">                 WebGLShaders.js               </a>                                           <a class="source" href="RenderableFace3.html">                 RenderableFace3.js               </a>                                           <a class="source" href="RenderableFace4.html">                 RenderableFace4.js               </a>                                           <a class="source" href="RenderableLine.html">                 RenderableLine.js               </a>                                           <a class="source" href="RenderableObject.html">                 RenderableObject.js               </a>                                           <a class="source" href="RenderableParticle.html">                 RenderableParticle.js               </a>                                           <a class="source" href="RenderableVertex.html">                 RenderableVertex.js               </a>                                           <a class="source" href="Fog.html">                 Fog.js               </a>                                           <a class="source" href="FogExp2.html">                 FogExp2.js               </a>                                           <a class="source" href="Scene.html">                 Scene.js               </a>                                           <a class="source" href="DataTexture.html">                 DataTexture.js               </a>                                           <a class="source" href="Texture.html">                 Texture.js               </a>                        </div>         </div>       </div>          <table cellpadding="0" cellspacing="0">       <thead>         <tr>           <th class="docs">             <h1>               Path.js             </h1>           </th>           <th class="code">           </th>         </tr>       </thead>       <tbody>                               <tr id="section-1">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-1">&#182;</a>               </div>                            </td>             <td class="code">               <div class="highlight"><pre><span class="cm">/**</span>
+<span class="cm"> * @author zz85 / http://www.lab4games.net/zz85/blog</span>
+<span class="cm"> * Creates free form 2d path using series of points, lines or curves.</span>
+<span class="cm"> *</span>
+<span class="cm"> **/</span>
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">points</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="nx">THREE</span><span class="p">.</span><span class="nx">CurvePath</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+
+	<span class="k">this</span><span class="p">.</span><span class="nx">actions</span> <span class="o">=</span> <span class="p">[];</span>
+
+	<span class="k">if</span> <span class="p">(</span> <span class="nx">points</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="k">this</span><span class="p">.</span><span class="nx">fromPoints</span><span class="p">(</span> <span class="nx">points</span> <span class="p">);</span>
+
+	<span class="p">}</span>
+
+<span class="p">};</span>
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">CurvePath</span><span class="p">();</span>
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">constructor</span> <span class="o">=</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">;</span>
+
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span> <span class="o">=</span> <span class="p">{</span>
+
+	<span class="nx">MOVE_TO</span><span class="o">:</span> <span class="s1">&#39;moveTo&#39;</span><span class="p">,</span>
+	<span class="nx">LINE_TO</span><span class="o">:</span> <span class="s1">&#39;lineTo&#39;</span><span class="p">,</span>
+	<span class="nx">QUADRATIC_CURVE_TO</span><span class="o">:</span> <span class="s1">&#39;quadraticCurveTo&#39;</span><span class="p">,</span> <span class="c1">// Bezier quadratic curve</span>
+	<span class="nx">BEZIER_CURVE_TO</span><span class="o">:</span> <span class="s1">&#39;bezierCurveTo&#39;</span><span class="p">,</span> 		<span class="c1">// Bezier cubic curve</span>
+	<span class="nx">CSPLINE_THRU</span><span class="o">:</span> <span class="s1">&#39;splineThru&#39;</span><span class="p">,</span>				<span class="c1">// Catmull-rom spline</span>
+	<span class="nx">ARC</span><span class="o">:</span> <span class="s1">&#39;arc&#39;</span>								<span class="c1">// Circle</span>
+
+<span class="p">};</span></pre></div>             </td>           </tr>                               <tr id="section-2">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-2">&#182;</a>               </div>               <p>TODO Clean up PATH API</p>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-3">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-3">&#182;</a>               </div>               <p>Create path using straight lines to connect all points
+- vectors: array of Vector2</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">fromPoints</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">vectors</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="k">this</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span> <span class="nx">vectors</span><span class="p">[</span> <span class="mi">0</span> <span class="p">].</span><span class="nx">x</span><span class="p">,</span> <span class="nx">vectors</span><span class="p">[</span> <span class="mi">0</span> <span class="p">].</span><span class="nx">y</span> <span class="p">);</span>
+
+	<span class="kd">var</span> <span class="nx">v</span><span class="p">,</span> <span class="nx">vlen</span> <span class="o">=</span> <span class="nx">vectors</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+
+	<span class="k">for</span> <span class="p">(</span> <span class="nx">v</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">v</span> <span class="o">&lt;</span> <span class="nx">vlen</span><span class="p">;</span> <span class="nx">v</span><span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="k">this</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span> <span class="nx">vectors</span><span class="p">[</span> <span class="nx">v</span> <span class="p">].</span><span class="nx">x</span><span class="p">,</span> <span class="nx">vectors</span><span class="p">[</span> <span class="nx">v</span> <span class="p">].</span><span class="nx">y</span> <span class="p">);</span>
+
+	<span class="p">};</span>
+
+<span class="p">};</span></pre></div>             </td>           </tr>                               <tr id="section-4">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-4">&#182;</a>               </div>               <p>startPath() endPath()?</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">moveTo</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="kd">var</span> <span class="nx">args</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span> <span class="nx">arguments</span> <span class="p">);</span>
+	<span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="p">{</span> <span class="nx">action</span><span class="o">:</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">MOVE_TO</span><span class="p">,</span> <span class="nx">args</span><span class="o">:</span> <span class="nx">args</span> <span class="p">}</span> <span class="p">);</span>
+
+<span class="p">};</span>
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">lineTo</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="kd">var</span> <span class="nx">args</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span> <span class="nx">arguments</span> <span class="p">);</span>
+
+	<span class="kd">var</span> <span class="nx">lastargs</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">[</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">].</span><span class="nx">args</span><span class="p">;</span>
+
+	<span class="kd">var</span> <span class="nx">x0</span> <span class="o">=</span> <span class="nx">lastargs</span><span class="p">[</span> <span class="nx">lastargs</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">2</span> <span class="p">];</span>
+	<span class="kd">var</span> <span class="nx">y0</span> <span class="o">=</span> <span class="nx">lastargs</span><span class="p">[</span> <span class="nx">lastargs</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">];</span>
+
+	<span class="kd">var</span> <span class="nx">curve</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">LineCurve</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">x0</span><span class="p">,</span> <span class="nx">y0</span> <span class="p">),</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span> <span class="p">)</span> <span class="p">);</span>
+	<span class="k">this</span><span class="p">.</span><span class="nx">curves</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">curve</span> <span class="p">);</span>
+
+	<span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="p">{</span> <span class="nx">action</span><span class="o">:</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">LINE_TO</span><span class="p">,</span> <span class="nx">args</span><span class="o">:</span> <span class="nx">args</span> <span class="p">}</span> <span class="p">);</span>
+
+<span class="p">};</span>
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">quadraticCurveTo</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">aCPx</span><span class="p">,</span> <span class="nx">aCPy</span><span class="p">,</span> <span class="nx">aX</span><span class="p">,</span> <span class="nx">aY</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="kd">var</span> <span class="nx">args</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span> <span class="nx">arguments</span> <span class="p">);</span>
+
+	<span class="kd">var</span> <span class="nx">lastargs</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">[</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">].</span><span class="nx">args</span><span class="p">;</span>
+
+	<span class="kd">var</span> <span class="nx">x0</span> <span class="o">=</span> <span class="nx">lastargs</span><span class="p">[</span> <span class="nx">lastargs</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">2</span> <span class="p">];</span>
+	<span class="kd">var</span> <span class="nx">y0</span> <span class="o">=</span> <span class="nx">lastargs</span><span class="p">[</span> <span class="nx">lastargs</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">];</span>
+
+	<span class="kd">var</span> <span class="nx">curve</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">QuadraticBezierCurve</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">x0</span><span class="p">,</span> <span class="nx">y0</span> <span class="p">),</span>
+												<span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">aCPx</span><span class="p">,</span> <span class="nx">aCPy</span> <span class="p">),</span>
+												<span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">aX</span><span class="p">,</span> <span class="nx">aY</span> <span class="p">)</span> <span class="p">);</span>
+	<span class="k">this</span><span class="p">.</span><span class="nx">curves</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">curve</span> <span class="p">);</span>
+
+	<span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="p">{</span> <span class="nx">action</span><span class="o">:</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">QUADRATIC_CURVE_TO</span><span class="p">,</span> <span class="nx">args</span><span class="o">:</span> <span class="nx">args</span> <span class="p">}</span> <span class="p">);</span>
+
+<span class="p">};</span>
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">bezierCurveTo</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">aCP1x</span><span class="p">,</span> <span class="nx">aCP1y</span><span class="p">,</span>
+                                               <span class="nx">aCP2x</span><span class="p">,</span> <span class="nx">aCP2y</span><span class="p">,</span>
+                                               <span class="nx">aX</span><span class="p">,</span> <span class="nx">aY</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="kd">var</span> <span class="nx">args</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span> <span class="nx">arguments</span> <span class="p">);</span>
+
+	<span class="kd">var</span> <span class="nx">lastargs</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">[</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">].</span><span class="nx">args</span><span class="p">;</span>
+
+	<span class="kd">var</span> <span class="nx">x0</span> <span class="o">=</span> <span class="nx">lastargs</span><span class="p">[</span> <span class="nx">lastargs</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">2</span> <span class="p">];</span>
+	<span class="kd">var</span> <span class="nx">y0</span> <span class="o">=</span> <span class="nx">lastargs</span><span class="p">[</span> <span class="nx">lastargs</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">];</span>
+
+	<span class="kd">var</span> <span class="nx">curve</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">CubicBezierCurve</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">x0</span><span class="p">,</span> <span class="nx">y0</span> <span class="p">),</span>
+											<span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">aCP1x</span><span class="p">,</span> <span class="nx">aCP1y</span> <span class="p">),</span>
+											<span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">aCP2x</span><span class="p">,</span> <span class="nx">aCP2y</span> <span class="p">),</span>
+											<span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">aX</span><span class="p">,</span> <span class="nx">aY</span> <span class="p">)</span> <span class="p">);</span>
+	<span class="k">this</span><span class="p">.</span><span class="nx">curves</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">curve</span> <span class="p">);</span>
+
+	<span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="p">{</span> <span class="nx">action</span><span class="o">:</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">BEZIER_CURVE_TO</span><span class="p">,</span> <span class="nx">args</span><span class="o">:</span> <span class="nx">args</span> <span class="p">}</span> <span class="p">);</span>
+
+<span class="p">};</span>
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">splineThru</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">pts</span> <span class="cm">/*Array of Vector*/</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="kd">var</span> <span class="nx">args</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span> <span class="nx">arguments</span> <span class="p">);</span>
+	<span class="kd">var</span> <span class="nx">lastargs</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">[</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">].</span><span class="nx">args</span><span class="p">;</span>
+
+	<span class="kd">var</span> <span class="nx">x0</span> <span class="o">=</span> <span class="nx">lastargs</span><span class="p">[</span> <span class="nx">lastargs</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">2</span> <span class="p">];</span>
+	<span class="kd">var</span> <span class="nx">y0</span> <span class="o">=</span> <span class="nx">lastargs</span><span class="p">[</span> <span class="nx">lastargs</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">];</span></pre></div>             </td>           </tr>                               <tr id="section-5">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-5">&#182;</a>               </div>               <hr />             </td>             <td class="code">               <div class="highlight"><pre>	<span class="kd">var</span> <span class="nx">npts</span> <span class="o">=</span> <span class="p">[</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">x0</span><span class="p">,</span> <span class="nx">y0</span> <span class="p">)</span> <span class="p">];</span>
+	<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">push</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span> <span class="nx">npts</span><span class="p">,</span> <span class="nx">pts</span> <span class="p">);</span>
+
+	<span class="kd">var</span> <span class="nx">curve</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">SplineCurve</span><span class="p">(</span> <span class="nx">npts</span> <span class="p">);</span>
+	<span class="k">this</span><span class="p">.</span><span class="nx">curves</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">curve</span> <span class="p">);</span>
+
+	<span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="p">{</span> <span class="nx">action</span><span class="o">:</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">CSPLINE_THRU</span><span class="p">,</span> <span class="nx">args</span><span class="o">:</span> <span class="nx">args</span> <span class="p">}</span> <span class="p">);</span>
+
+<span class="p">};</span></pre></div>             </td>           </tr>                               <tr id="section-6">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-6">&#182;</a>               </div>               <p>FUTURE: Change the API or follow canvas API?
+TODO ARC ( x, y, x - radius, y - radius, startAngle, endAngle )</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">arc</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">aX</span><span class="p">,</span> <span class="nx">aY</span><span class="p">,</span> <span class="nx">aRadius</span><span class="p">,</span>
+									  <span class="nx">aStartAngle</span><span class="p">,</span> <span class="nx">aEndAngle</span><span class="p">,</span> <span class="nx">aClockwise</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="kd">var</span> <span class="nx">args</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span> <span class="nx">arguments</span> <span class="p">);</span>
+
+	<span class="kd">var</span> <span class="nx">curve</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">ArcCurve</span><span class="p">(</span> <span class="nx">aX</span><span class="p">,</span> <span class="nx">aY</span><span class="p">,</span> <span class="nx">aRadius</span><span class="p">,</span>
+									<span class="nx">aStartAngle</span><span class="p">,</span> <span class="nx">aEndAngle</span><span class="p">,</span> <span class="nx">aClockwise</span> <span class="p">);</span>
+	<span class="k">this</span><span class="p">.</span><span class="nx">curves</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">curve</span> <span class="p">);</span></pre></div>             </td>           </tr>                               <tr id="section-7">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-7">&#182;</a>               </div>               <p>console.log( 'arc', args );</p>             </td>             <td class="code">               <div class="highlight"><pre>	<span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="p">{</span> <span class="nx">action</span><span class="o">:</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">ARC</span><span class="p">,</span> <span class="nx">args</span><span class="o">:</span> <span class="nx">args</span> <span class="p">}</span> <span class="p">);</span>
+
+ <span class="p">};</span>
+
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">getSpacedPoints</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">divisions</span><span class="p">,</span> <span class="nx">closedPath</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="nx">divisions</span> <span class="p">)</span> <span class="nx">divisions</span> <span class="o">=</span> <span class="mi">40</span><span class="p">;</span>
+
+	<span class="kd">var</span> <span class="nx">points</span> <span class="o">=</span> <span class="p">[];</span>
+
+	<span class="k">for</span> <span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">divisions</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">points</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">this</span><span class="p">.</span><span class="nx">getPoint</span><span class="p">(</span> <span class="nx">i</span> <span class="o">/</span> <span class="nx">divisions</span> <span class="p">)</span> <span class="p">);</span></pre></div>             </td>           </tr>                               <tr id="section-8">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-8">&#182;</a>               </div>               <p>if( !this.getPoint( i / divisions ) ) throw "DIE";</p>             </td>             <td class="code">               <div class="highlight"><pre>	<span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-9">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-9">&#182;</a>               </div>               <p>if ( closedPath ) {</p>
+
+<pre><code>points.push( points[ 0 ] );
+</code></pre>
+
+<p>}</p>             </td>             <td class="code">               <div class="highlight"><pre>	<span class="k">return</span> <span class="nx">points</span><span class="p">;</span>
+
+<span class="p">};</span>
+
+<span class="cm">/* Return an array of vectors based on contour of the path */</span>
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">getPoints</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">divisions</span><span class="p">,</span> <span class="nx">closedPath</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="nx">divisions</span> <span class="o">=</span> <span class="nx">divisions</span> <span class="o">||</span> <span class="mi">12</span><span class="p">;</span>
+
+	<span class="kd">var</span> <span class="nx">points</span> <span class="o">=</span> <span class="p">[];</span>
+
+	<span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">il</span><span class="p">,</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">action</span><span class="p">,</span> <span class="nx">args</span><span class="p">;</span>
+	<span class="kd">var</span> <span class="nx">cpx</span><span class="p">,</span> <span class="nx">cpy</span><span class="p">,</span> <span class="nx">cpx2</span><span class="p">,</span> <span class="nx">cpy2</span><span class="p">,</span> <span class="nx">cpx1</span><span class="p">,</span> <span class="nx">cpy1</span><span class="p">,</span> <span class="nx">cpx0</span><span class="p">,</span> <span class="nx">cpy0</span><span class="p">,</span>
+		<span class="nx">laste</span><span class="p">,</span> <span class="nx">j</span><span class="p">,</span>
+		<span class="nx">t</span><span class="p">,</span> <span class="nx">tx</span><span class="p">,</span> <span class="nx">ty</span><span class="p">;</span>
+
+	<span class="k">for</span> <span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">il</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">il</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">item</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">[</span> <span class="nx">i</span> <span class="p">];</span>
+
+		<span class="nx">action</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">action</span><span class="p">;</span>
+		<span class="nx">args</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">args</span><span class="p">;</span>
+
+		<span class="k">switch</span><span class="p">(</span> <span class="nx">action</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="k">case</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">MOVE_TO</span><span class="o">:</span></pre></div>             </td>           </tr>                               <tr id="section-10">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-10">&#182;</a>               </div>               <p>points.push( new THREE.Vector2( args[ 0 ], args[ 1 ] ) );</p>             </td>             <td class="code">               <div class="highlight"><pre>			<span class="k">break</span><span class="p">;</span>
+
+		<span class="k">case</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">LINE_TO</span><span class="o">:</span>
+
+			<span class="nx">points</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">0</span> <span class="p">],</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">1</span> <span class="p">]</span> <span class="p">)</span> <span class="p">);</span>
+
+			<span class="k">break</span><span class="p">;</span>
+
+		<span class="k">case</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">QUADRATIC_CURVE_TO</span><span class="o">:</span>
+
+			<span class="nx">cpx</span>  <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">2</span> <span class="p">];</span>
+			<span class="nx">cpy</span>  <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">3</span> <span class="p">];</span>
+
+			<span class="nx">cpx1</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">0</span> <span class="p">];</span>
+			<span class="nx">cpy1</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">1</span> <span class="p">];</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">points</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">laste</span> <span class="o">=</span> <span class="nx">points</span><span class="p">[</span> <span class="nx">points</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">];</span>
+
+				<span class="nx">cpx0</span> <span class="o">=</span> <span class="nx">laste</span><span class="p">.</span><span class="nx">x</span><span class="p">;</span>
+				<span class="nx">cpy0</span> <span class="o">=</span> <span class="nx">laste</span><span class="p">.</span><span class="nx">y</span><span class="p">;</span>
+
+			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+				<span class="nx">laste</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">[</span> <span class="nx">i</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">].</span><span class="nx">args</span><span class="p">;</span>
+
+				<span class="nx">cpx0</span> <span class="o">=</span> <span class="nx">laste</span><span class="p">[</span> <span class="nx">laste</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">2</span> <span class="p">];</span>
+				<span class="nx">cpy0</span> <span class="o">=</span> <span class="nx">laste</span><span class="p">[</span> <span class="nx">laste</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">];</span>
+
+			<span class="p">}</span>
+
+			<span class="k">for</span> <span class="p">(</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;=</span> <span class="nx">divisions</span><span class="p">;</span> <span class="nx">j</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">t</span> <span class="o">=</span> <span class="nx">j</span> <span class="o">/</span> <span class="nx">divisions</span><span class="p">;</span>
+
+				<span class="nx">tx</span> <span class="o">=</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Shape</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">b2</span><span class="p">(</span> <span class="nx">t</span><span class="p">,</span> <span class="nx">cpx0</span><span class="p">,</span> <span class="nx">cpx1</span><span class="p">,</span> <span class="nx">cpx</span> <span class="p">);</span>
+				<span class="nx">ty</span> <span class="o">=</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Shape</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">b2</span><span class="p">(</span> <span class="nx">t</span><span class="p">,</span> <span class="nx">cpy0</span><span class="p">,</span> <span class="nx">cpy1</span><span class="p">,</span> <span class="nx">cpy</span> <span class="p">);</span>
+
+				<span class="nx">points</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">tx</span><span class="p">,</span> <span class="nx">ty</span> <span class="p">)</span> <span class="p">);</span>
+
+		  	<span class="p">}</span>
+
+			<span class="k">break</span><span class="p">;</span>
+
+		<span class="k">case</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">BEZIER_CURVE_TO</span><span class="o">:</span>
+
+			<span class="nx">cpx</span>  <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">4</span> <span class="p">];</span>
+			<span class="nx">cpy</span>  <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">5</span> <span class="p">];</span>
+
+			<span class="nx">cpx1</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">0</span> <span class="p">];</span>
+			<span class="nx">cpy1</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">1</span> <span class="p">];</span>
+
+			<span class="nx">cpx2</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">2</span> <span class="p">];</span>
+			<span class="nx">cpy2</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">3</span> <span class="p">];</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">points</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">laste</span> <span class="o">=</span> <span class="nx">points</span><span class="p">[</span> <span class="nx">points</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">];</span>
+
+				<span class="nx">cpx0</span> <span class="o">=</span> <span class="nx">laste</span><span class="p">.</span><span class="nx">x</span><span class="p">;</span>
+				<span class="nx">cpy0</span> <span class="o">=</span> <span class="nx">laste</span><span class="p">.</span><span class="nx">y</span><span class="p">;</span>
+
+			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+				<span class="nx">laste</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">[</span> <span class="nx">i</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">].</span><span class="nx">args</span><span class="p">;</span>
+
+				<span class="nx">cpx0</span> <span class="o">=</span> <span class="nx">laste</span><span class="p">[</span> <span class="nx">laste</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">2</span> <span class="p">];</span>
+				<span class="nx">cpy0</span> <span class="o">=</span> <span class="nx">laste</span><span class="p">[</span> <span class="nx">laste</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">];</span>
+
+			<span class="p">}</span>
+
+
+			<span class="k">for</span> <span class="p">(</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;=</span> <span class="nx">divisions</span><span class="p">;</span> <span class="nx">j</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">t</span> <span class="o">=</span> <span class="nx">j</span> <span class="o">/</span> <span class="nx">divisions</span><span class="p">;</span>
+
+				<span class="nx">tx</span> <span class="o">=</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Shape</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">b3</span><span class="p">(</span> <span class="nx">t</span><span class="p">,</span> <span class="nx">cpx0</span><span class="p">,</span> <span class="nx">cpx1</span><span class="p">,</span> <span class="nx">cpx2</span><span class="p">,</span> <span class="nx">cpx</span> <span class="p">);</span>
+				<span class="nx">ty</span> <span class="o">=</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Shape</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">b3</span><span class="p">(</span> <span class="nx">t</span><span class="p">,</span> <span class="nx">cpy0</span><span class="p">,</span> <span class="nx">cpy1</span><span class="p">,</span> <span class="nx">cpy2</span><span class="p">,</span> <span class="nx">cpy</span> <span class="p">);</span>
+
+				<span class="nx">points</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">tx</span><span class="p">,</span> <span class="nx">ty</span> <span class="p">)</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+			<span class="k">break</span><span class="p">;</span>
+
+		<span class="k">case</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">CSPLINE_THRU</span><span class="o">:</span>
+
+			<span class="nx">laste</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">[</span> <span class="nx">i</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">].</span><span class="nx">args</span><span class="p">;</span>
+
+			<span class="kd">var</span> <span class="nx">last</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">laste</span><span class="p">[</span> <span class="nx">laste</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">2</span> <span class="p">],</span> <span class="nx">laste</span><span class="p">[</span> <span class="nx">laste</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">]</span> <span class="p">);</span>
+			<span class="kd">var</span> <span class="nx">spts</span> <span class="o">=</span> <span class="p">[</span> <span class="nx">last</span> <span class="p">];</span>
+
+			<span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="nx">divisions</span> <span class="o">*</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">0</span> <span class="p">].</span><span class="nx">length</span><span class="p">;</span>
+
+			<span class="nx">spts</span> <span class="o">=</span> <span class="nx">spts</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">0</span> <span class="p">]</span> <span class="p">);</span>
+
+			<span class="kd">var</span> <span class="nx">spline</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">SplineCurve</span><span class="p">(</span> <span class="nx">spts</span> <span class="p">);</span>
+
+			<span class="k">for</span> <span class="p">(</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;=</span> <span class="nx">n</span><span class="p">;</span> <span class="nx">j</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">points</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">spline</span><span class="p">.</span><span class="nx">getPointAt</span><span class="p">(</span> <span class="nx">j</span> <span class="o">/</span> <span class="nx">n</span> <span class="p">)</span> <span class="p">)</span> <span class="p">;</span>
+
+			<span class="p">}</span>
+
+			<span class="k">break</span><span class="p">;</span>
+
+		<span class="k">case</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">ARC</span><span class="o">:</span>
+
+			<span class="nx">laste</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">[</span> <span class="nx">i</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">].</span><span class="nx">args</span><span class="p">;</span>
+
+			<span class="kd">var</span> <span class="nx">aX</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">0</span> <span class="p">],</span> <span class="nx">aY</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">1</span> <span class="p">],</span>
+				<span class="nx">aRadius</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">2</span> <span class="p">],</span>
+				<span class="nx">aStartAngle</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">3</span> <span class="p">],</span> <span class="nx">aEndAngle</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span> <span class="mi">4</span> <span class="p">],</span>
+				<span class="nx">aClockwise</span> <span class="o">=</span> <span class="o">!!</span><span class="nx">args</span><span class="p">[</span> <span class="mi">5</span> <span class="p">];</span>
+
+			<span class="kd">var</span> <span class="nx">lastx</span> <span class="o">=</span> <span class="nx">laste</span><span class="p">[</span> <span class="nx">laste</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">2</span> <span class="p">],</span>
+				<span class="nx">lasty</span> <span class="o">=</span> <span class="nx">laste</span><span class="p">[</span> <span class="nx">laste</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">];</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">laste</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">lastx</span> <span class="o">=</span> <span class="nx">lasty</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+			<span class="p">}</span>
+
+
+			<span class="kd">var</span> <span class="nx">deltaAngle</span> <span class="o">=</span> <span class="nx">aEndAngle</span> <span class="o">-</span> <span class="nx">aStartAngle</span><span class="p">;</span>
+			<span class="kd">var</span> <span class="nx">angle</span><span class="p">;</span>
+			<span class="kd">var</span> <span class="nx">tdivisions</span> <span class="o">=</span> <span class="nx">divisions</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+			<span class="kd">var</span> <span class="nx">t</span><span class="p">;</span>
+
+			<span class="k">for</span> <span class="p">(</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;=</span> <span class="nx">tdivisions</span><span class="p">;</span> <span class="nx">j</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">t</span> <span class="o">=</span> <span class="nx">j</span> <span class="o">/</span> <span class="nx">tdivisions</span><span class="p">;</span>
+
+				<span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="nx">aClockwise</span> <span class="p">)</span> <span class="p">{</span>
+
+					<span class="nx">t</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="nx">t</span><span class="p">;</span>
+
+				<span class="p">}</span>
+
+				<span class="nx">angle</span> <span class="o">=</span> <span class="nx">aStartAngle</span> <span class="o">+</span> <span class="nx">t</span> <span class="o">*</span> <span class="nx">deltaAngle</span><span class="p">;</span>
+
+				<span class="nx">tx</span> <span class="o">=</span> <span class="nx">lastx</span> <span class="o">+</span> <span class="nx">aX</span> <span class="o">+</span> <span class="nx">aRadius</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">cos</span><span class="p">(</span> <span class="nx">angle</span> <span class="p">);</span>
+				<span class="nx">ty</span> <span class="o">=</span> <span class="nx">lasty</span> <span class="o">+</span> <span class="nx">aY</span> <span class="o">+</span> <span class="nx">aRadius</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">sin</span><span class="p">(</span> <span class="nx">angle</span> <span class="p">);</span></pre></div>             </td>           </tr>                               <tr id="section-11">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-11">&#182;</a>               </div>               <p>console.log('t', t, 'angle', angle, 'tx', tx, 'ty', ty);</p>             </td>             <td class="code">               <div class="highlight"><pre>				<span class="nx">points</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector2</span><span class="p">(</span> <span class="nx">tx</span><span class="p">,</span> <span class="nx">ty</span> <span class="p">)</span> <span class="p">);</span>
+
+			<span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-12">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-12">&#182;</a>               </div>               <p>console.log(points);</p>             </td>             <td class="code">               <div class="highlight"><pre>		  <span class="k">break</span><span class="p">;</span>
+
+		<span class="p">}</span> <span class="c1">// end switch</span>
+
+	<span class="p">}</span>
+
+	<span class="k">if</span> <span class="p">(</span> <span class="nx">closedPath</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">points</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">points</span><span class="p">[</span> <span class="mi">0</span> <span class="p">]</span> <span class="p">);</span>
+
+	<span class="p">}</span>
+
+	<span class="k">return</span> <span class="nx">points</span><span class="p">;</span>
+
+<span class="p">};</span></pre></div>             </td>           </tr>                               <tr id="section-13">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-13">&#182;</a>               </div>               <p>This was used for testing purposes. Should be removed soon.</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">transform</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">path</span><span class="p">,</span> <span class="nx">segments</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="kd">var</span> <span class="nx">bounds</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getBoundingBox</span><span class="p">();</span>
+	<span class="kd">var</span> <span class="nx">oldPts</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getPoints</span><span class="p">(</span> <span class="nx">segments</span> <span class="p">);</span> <span class="c1">// getPoints getSpacedPoints</span></pre></div>             </td>           </tr>                               <tr id="section-14">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-14">&#182;</a>               </div>               <p>console.log( path.cacheArcLengths() );
+path.getLengths(400);
+segments = 40;</p>             </td>             <td class="code">               <div class="highlight"><pre>	<span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">getWrapPoints</span><span class="p">(</span> <span class="nx">oldPts</span><span class="p">,</span> <span class="nx">path</span> <span class="p">);</span>
+
+<span class="p">};</span></pre></div>             </td>           </tr>                               <tr id="section-15">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-15">&#182;</a>               </div>               <p>Read http://www.tinaja.com/glib/nonlingr.pdf
+nonlinear transforms</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">nltransform</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">,</span> <span class="nx">e</span><span class="p">,</span> <span class="nx">f</span> <span class="p">)</span> <span class="p">{</span></pre></div>             </td>           </tr>                               <tr id="section-16">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-16">&#182;</a>               </div>               <p>a - horizontal size
+b - lean
+c - x offset
+d - vertical size
+e - climb
+f - y offset</p>             </td>             <td class="code">               <div class="highlight"><pre>	<span class="kd">var</span> <span class="nx">oldPts</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getPoints</span><span class="p">();</span>
+
+	<span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">il</span><span class="p">,</span> <span class="nx">p</span><span class="p">,</span> <span class="nx">oldX</span><span class="p">,</span> <span class="nx">oldY</span><span class="p">;</span>
+
+	<span class="k">for</span> <span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">il</span> <span class="o">=</span> <span class="nx">oldPts</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">il</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">p</span> <span class="o">=</span> <span class="nx">oldPts</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+
+		<span class="nx">oldX</span> <span class="o">=</span> <span class="nx">p</span><span class="p">.</span><span class="nx">x</span><span class="p">;</span>
+		<span class="nx">oldY</span> <span class="o">=</span> <span class="nx">p</span><span class="p">.</span><span class="nx">y</span><span class="p">;</span>
+
+		<span class="nx">p</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">*</span> <span class="nx">oldX</span> <span class="o">+</span> <span class="nx">b</span> <span class="o">*</span> <span class="nx">oldY</span> <span class="o">+</span> <span class="nx">c</span><span class="p">;</span>
+		<span class="nx">p</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">d</span> <span class="o">*</span> <span class="nx">oldY</span> <span class="o">+</span> <span class="nx">e</span> <span class="o">*</span> <span class="nx">oldX</span> <span class="o">+</span> <span class="nx">f</span><span class="p">;</span>
+
+	<span class="p">}</span>
+
+	<span class="k">return</span> <span class="nx">oldPts</span><span class="p">;</span>
+
+<span class="p">};</span></pre></div>             </td>           </tr>                               <tr id="section-17">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-17">&#182;</a>               </div>               <p>FUTURE Export JSON Format</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="cm">/* Draws this path onto a 2d canvas easily */</span>
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">debug</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">canvas</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="kd">var</span> <span class="nx">bounds</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getBoundingBox</span><span class="p">();</span>
+
+	<span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="nx">canvas</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span> <span class="s2">&quot;canvas&quot;</span> <span class="p">);</span>
+
+		<span class="nx">canvas</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span> <span class="s1">&#39;width&#39;</span><span class="p">,</span>  <span class="nx">bounds</span><span class="p">.</span><span class="nx">maxX</span> <span class="o">+</span> <span class="mi">100</span> <span class="p">);</span>
+		<span class="nx">canvas</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span> <span class="s1">&#39;height&#39;</span><span class="p">,</span> <span class="nx">bounds</span><span class="p">.</span><span class="nx">maxY</span> <span class="o">+</span> <span class="mi">100</span> <span class="p">);</span>
+
+		<span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span> <span class="nx">canvas</span> <span class="p">);</span>
+
+	<span class="p">}</span>
+
+	<span class="kd">var</span> <span class="nx">ctx</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span> <span class="s2">&quot;2d&quot;</span> <span class="p">);</span>
+	<span class="nx">ctx</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">&quot;white&quot;</span><span class="p">;</span>
+	<span class="nx">ctx</span><span class="p">.</span><span class="nx">fillRect</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">height</span> <span class="p">);</span>
+
+	<span class="nx">ctx</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;black&quot;</span><span class="p">;</span>
+	<span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+
+	<span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">il</span><span class="p">,</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">action</span><span class="p">,</span> <span class="nx">args</span><span class="p">;</span></pre></div>             </td>           </tr>                               <tr id="section-18">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-18">&#182;</a>               </div>               <p>Debug Path</p>             </td>             <td class="code">               <div class="highlight"><pre>	<span class="k">for</span> <span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">il</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">il</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">item</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">[</span> <span class="nx">i</span> <span class="p">];</span>
+
+		<span class="nx">args</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">args</span><span class="p">;</span>
+		<span class="nx">action</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">action</span><span class="p">;</span></pre></div>             </td>           </tr>                               <tr id="section-19">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-19">&#182;</a>               </div>               <p>Short hand for now</p>             </td>             <td class="code">               <div class="highlight"><pre>		<span class="k">if</span> <span class="p">(</span> <span class="nx">action</span> <span class="o">!=</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">CSPLINE_THRU</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="nx">ctx</span><span class="p">[</span> <span class="nx">action</span> <span class="p">].</span><span class="nx">apply</span><span class="p">(</span> <span class="nx">ctx</span><span class="p">,</span> <span class="nx">args</span> <span class="p">);</span>
+
+		<span class="p">}</span>
+
+		<span class="cm">/*</span>
+<span class="cm">		switch ( action ) {</span>
+
+<span class="cm">			case THREE.PathActions.MOVE_TO:</span>
+
+<span class="cm">				ctx[ action ]( args[ 0 ], args[ 1 ] );</span>
+<span class="cm">				break;</span>
+
+<span class="cm">			case THREE.PathActions.LINE_TO:</span>
+
+<span class="cm">				ctx[ action ]( args[ 0 ], args[ 1 ] );</span>
+<span class="cm">				break;</span>
+
+<span class="cm">			case THREE.PathActions.QUADRATIC_CURVE_TO:</span>
+
+<span class="cm">				ctx[ action ]( args[ 0 ], args[ 1 ], args[ 2 ], args[ 3 ] );</span>
+<span class="cm">				break;</span>
+
+<span class="cm">			case THREE.PathActions.CUBIC_CURVE_TO:</span>
+
+<span class="cm">				ctx[ action ]( args[ 0 ], args[ 1 ], args[ 2 ], args[ 3 ], args[ 4 ], args[ 5 ] );</span>
+<span class="cm">				break;</span>
+
+<span class="cm">		}</span>
+<span class="cm">		*/</span>
+
+	<span class="p">}</span>
+
+	<span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+	<span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span></pre></div>             </td>           </tr>                               <tr id="section-20">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-20">&#182;</a>               </div>               <p>Debug Points</p>             </td>             <td class="code">               <div class="highlight"><pre>	<span class="nx">ctx</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;red&quot;</span><span class="p">;</span>
+
+	<span class="cm">/* TO CLEAN UP */</span>
+
+	<span class="kd">var</span> <span class="nx">p</span><span class="p">,</span> <span class="nx">points</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getPoints</span><span class="p">();</span></pre></div>             </td>           </tr>                               <tr id="section-21">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-21">&#182;</a>               </div>               <p>var theta = -90 /180 * Math.PI;
+var p, points = this.transform( 0.866, - 0.866,0, 0.500 , 0.50,-50 );</p>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-22">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-22">&#182;</a>               </div>               <p>0.866, - 0.866,0, 0.500 , 0.50,-50</p>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-23">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-23">&#182;</a>               </div>               <p>Math.cos(theta),Math.sin(theta),100,
+Math.cos(theta),-Math.sin(theta),-50</p>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-24">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-24">&#182;</a>               </div>               <p>translate, scale, rotation</p>             </td>             <td class="code">               <div class="highlight"><pre>	<span class="k">for</span> <span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">il</span> <span class="o">=</span> <span class="nx">points</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">il</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">p</span> <span class="o">=</span> <span class="nx">points</span><span class="p">[</span> <span class="nx">i</span> <span class="p">];</span>
+
+		<span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+		<span class="nx">ctx</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span> <span class="nx">p</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">p</span><span class="p">.</span><span class="nx">y</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="kc">false</span> <span class="p">);</span>
+		<span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+		<span class="nx">ctx</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+
+	<span class="p">}</span>
+
+<span class="p">};</span></pre></div>             </td>           </tr>                               <tr id="section-25">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-25">&#182;</a>               </div>               <p>Breaks path into shapes</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toShapes</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+
+	<span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">il</span><span class="p">,</span> <span class="nx">item</span><span class="p">,</span> <span class="nx">action</span><span class="p">,</span> <span class="nx">args</span><span class="p">;</span>
+
+	<span class="kd">var</span> <span class="nx">subPaths</span> <span class="o">=</span> <span class="p">[],</span> <span class="nx">lastPath</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">();</span>
+
+	<span class="k">for</span> <span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">il</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">il</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">item</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">actions</span><span class="p">[</span> <span class="nx">i</span> <span class="p">];</span>
+
+		<span class="nx">args</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">args</span><span class="p">;</span>
+		<span class="nx">action</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">action</span><span class="p">;</span>
+
+		<span class="k">if</span> <span class="p">(</span> <span class="nx">action</span> <span class="o">==</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">PathActions</span><span class="p">.</span><span class="nx">MOVE_TO</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">lastPath</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">length</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">subPaths</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">lastPath</span> <span class="p">);</span>
+				<span class="nx">lastPath</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Path</span><span class="p">();</span>
+
+			<span class="p">}</span>
+
+		<span class="p">}</span>
+
+		<span class="nx">lastPath</span><span class="p">[</span> <span class="nx">action</span> <span class="p">].</span><span class="nx">apply</span><span class="p">(</span> <span class="nx">lastPath</span><span class="p">,</span> <span class="nx">args</span> <span class="p">);</span>
+
+	<span class="p">}</span>
+
+	<span class="k">if</span> <span class="p">(</span> <span class="nx">lastPath</span><span class="p">.</span><span class="nx">actions</span><span class="p">.</span><span class="nx">length</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">subPaths</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">lastPath</span> <span class="p">);</span>
+
+	<span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-26">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-26">&#182;</a>               </div>               <p>console.log(subPaths);</p>             </td>             <td class="code">               <div class="highlight"><pre>	<span class="k">if</span> <span class="p">(</span> <span class="nx">subPaths</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)</span> <span class="k">return</span> <span class="p">[];</span>
+
+	<span class="kd">var</span> <span class="nx">holesFirst</span> <span class="o">=</span> <span class="o">!</span><span class="nx">THREE</span><span class="p">.</span><span class="nx">Shape</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">isClockWise</span><span class="p">(</span> <span class="nx">subPaths</span><span class="p">[</span> <span class="mi">0</span> <span class="p">].</span><span class="nx">getPoints</span><span class="p">()</span> <span class="p">);</span>
+
+	<span class="kd">var</span> <span class="nx">tmpPath</span><span class="p">,</span> <span class="nx">tmpShape</span><span class="p">,</span> <span class="nx">shapes</span> <span class="o">=</span> <span class="p">[];</span></pre></div>             </td>           </tr>                               <tr id="section-27">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-27">&#182;</a>               </div>               <p>console.log("Holes first", holesFirst);</p>             </td>             <td class="code">               <div class="highlight"><pre>	<span class="k">if</span> <span class="p">(</span> <span class="nx">holesFirst</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">tmpShape</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Shape</span><span class="p">();</span>
+
+		<span class="k">for</span> <span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">il</span> <span class="o">=</span> <span class="nx">subPaths</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">il</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="nx">tmpPath</span> <span class="o">=</span> <span class="nx">subPaths</span><span class="p">[</span> <span class="nx">i</span> <span class="p">];</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Shape</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">isClockWise</span><span class="p">(</span> <span class="nx">tmpPath</span><span class="p">.</span><span class="nx">getPoints</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">tmpShape</span><span class="p">.</span><span class="nx">actions</span> <span class="o">=</span> <span class="nx">tmpPath</span><span class="p">.</span><span class="nx">actions</span><span class="p">;</span>
+				<span class="nx">tmpShape</span><span class="p">.</span><span class="nx">curves</span> <span class="o">=</span> <span class="nx">tmpPath</span><span class="p">.</span><span class="nx">curves</span><span class="p">;</span>
+
+				<span class="nx">shapes</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">tmpShape</span> <span class="p">);</span>
+				<span class="nx">tmpShape</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Shape</span><span class="p">();</span></pre></div>             </td>           </tr>                               <tr id="section-28">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-28">&#182;</a>               </div>               <p>console.log('cw', i);</p>             </td>             <td class="code">               <div class="highlight"><pre>			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+				<span class="nx">tmpShape</span><span class="p">.</span><span class="nx">holes</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">tmpPath</span> <span class="p">);</span></pre></div>             </td>           </tr>                               <tr id="section-29">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-29">&#182;</a>               </div>               <p>console.log('ccw', i);</p>             </td>             <td class="code">               <div class="highlight"><pre>			<span class="p">}</span>
+
+		<span class="p">}</span>
+
+	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span></pre></div>             </td>           </tr>                               <tr id="section-30">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-30">&#182;</a>               </div>               <p>Shapes first</p>             </td>             <td class="code">               <div class="highlight"><pre>		<span class="k">for</span> <span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">il</span> <span class="o">=</span> <span class="nx">subPaths</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">il</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="nx">tmpPath</span> <span class="o">=</span> <span class="nx">subPaths</span><span class="p">[</span> <span class="nx">i</span> <span class="p">];</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Shape</span><span class="p">.</span><span class="nx">Utils</span><span class="p">.</span><span class="nx">isClockWise</span><span class="p">(</span> <span class="nx">tmpPath</span><span class="p">.</span><span class="nx">getPoints</span><span class="p">()</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+
+
+				<span class="k">if</span> <span class="p">(</span> <span class="nx">tmpShape</span> <span class="p">)</span> <span class="nx">shapes</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">tmpShape</span> <span class="p">);</span>
+
+				<span class="nx">tmpShape</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Shape</span><span class="p">();</span>
+				<span class="nx">tmpShape</span><span class="p">.</span><span class="nx">actions</span> <span class="o">=</span> <span class="nx">tmpPath</span><span class="p">.</span><span class="nx">actions</span><span class="p">;</span>
+				<span class="nx">tmpShape</span><span class="p">.</span><span class="nx">curves</span> <span class="o">=</span> <span class="nx">tmpPath</span><span class="p">.</span><span class="nx">curves</span><span class="p">;</span>
+
+			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+				<span class="nx">tmpShape</span><span class="p">.</span><span class="nx">holes</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">tmpPath</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">}</span>
+
+		<span class="nx">shapes</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">tmpShape</span> <span class="p">);</span>
+
+	<span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-31">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-31">&#182;</a>               </div>               <p>console.log("shape", shapes);</p>             </td>             <td class="code">               <div class="highlight"><pre>	<span class="k">return</span> <span class="nx">shapes</span><span class="p">;</span>
+
+<span class="p">};</span>
+
+</pre></div>             </td>           </tr>                </tbody>     </table>   </div> </body> </html> 

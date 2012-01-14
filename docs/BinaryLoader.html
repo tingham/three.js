@@ -1,0 +1,777 @@
+<!DOCTYPE html>  <html> <head>   <title>BinaryLoader.js</title>   <meta http-equiv="content-type" content="text/html; charset=UTF-8">   <link rel="stylesheet" media="all" href="docco.css" /> </head> <body>   <div id="container">     <div id="background"></div>            <div id="jump_to">         Jump To &hellip;         <div id="jump_wrapper">           <div id="jump_page">                                           <a class="source" href="Three.html">                 Three.js               </a>                                           <a class="source" href="Camera.html">                 Camera.js               </a>                                           <a class="source" href="OrthographicCamera.html">                 OrthographicCamera.js               </a>                                           <a class="source" href="PerspectiveCamera.html">                 PerspectiveCamera.js               </a>                                           <a class="source" href="Clock.html">                 Clock.js               </a>                                           <a class="source" href="Color.html">                 Color.js               </a>                                           <a class="source" href="Edge.html">                 Edge.js               </a>                                           <a class="source" href="Face3.html">                 Face3.js               </a>                                           <a class="source" href="Face4.html">                 Face4.js               </a>                                           <a class="source" href="Geometry.html">                 Geometry.js               </a>                                           <a class="source" href="Math.html">                 Math.js               </a>                                           <a class="source" href="Matrix3.html">                 Matrix3.js               </a>                                           <a class="source" href="Matrix4.html">                 Matrix4.js               </a>                                           <a class="source" href="Object3D.html">                 Object3D.js               </a>                                           <a class="source" href="Projector.html">                 Projector.js               </a>                                           <a class="source" href="Quaternion.html">                 Quaternion.js               </a>                                           <a class="source" href="Ray.html">                 Ray.js               </a>                                           <a class="source" href="Rectangle.html">                 Rectangle.js               </a>                                           <a class="source" href="Spline.html">                 Spline.js               </a>                                           <a class="source" href="UV.html">                 UV.js               </a>                                           <a class="source" href="Vector2.html">                 Vector2.js               </a>                                           <a class="source" href="Vector3.html">                 Vector3.js               </a>                                           <a class="source" href="Vector4.html">                 Vector4.js               </a>                                           <a class="source" href="Vertex.html">                 Vertex.js               </a>                                           <a class="source" href="ColorUtils.html">                 ColorUtils.js               </a>                                           <a class="source" href="GeometryUtils.html">                 GeometryUtils.js               </a>                                           <a class="source" href="ImageUtils.html">                 ImageUtils.js               </a>                                           <a class="source" href="SceneUtils.html">                 SceneUtils.js               </a>                                           <a class="source" href="ShaderUtils.html">                 ShaderUtils.js               </a>                                           <a class="source" href="Animation.html">                 Animation.js               </a>                                           <a class="source" href="AnimationHandler.html">                 AnimationHandler.js               </a>                                           <a class="source" href="AnimationMorphTarget.html">                 AnimationMorphTarget.js               </a>                                           <a class="source" href="CombinedCamera.html">                 CombinedCamera.js               </a>                                           <a class="source" href="CubeCamera.html">                 CubeCamera.js               </a>                                           <a class="source" href="FirstPersonCamera.html">                 FirstPersonCamera.js               </a>                                           <a class="source" href="FlyCamera.html">                 FlyCamera.js               </a>                                           <a class="source" href="PathCamera.html">                 PathCamera.js               </a>                                           <a class="source" href="RollCamera.html">                 RollCamera.js               </a>                                           <a class="source" href="TrackballCamera.html">                 TrackballCamera.js               </a>                                           <a class="source" href="FirstPersonControls.html">                 FirstPersonControls.js               </a>                                           <a class="source" href="FlyControls.html">                 FlyControls.js               </a>                                           <a class="source" href="PathControls.html">                 PathControls.js               </a>                                           <a class="source" href="RollControls.html">                 RollControls.js               </a>                                           <a class="source" href="TrackballControls.html">                 TrackballControls.js               </a>                                           <a class="source" href="Curve.html">                 Curve.js               </a>                                           <a class="source" href="CurvePath.html">                 CurvePath.js               </a>                                           <a class="source" href="Path.html">                 Path.js               </a>                                           <a class="source" href="Shape.html">                 Shape.js               </a>                                           <a class="source" href="TextPath.html">                 TextPath.js               </a>                                           <a class="source" href="CubeGeometry.html">                 CubeGeometry.js               </a>                                           <a class="source" href="CylinderGeometry.html">                 CylinderGeometry.js               </a>                                           <a class="source" href="ExtrudeGeometry.html">                 ExtrudeGeometry.js               </a>                                           <a class="source" href="IcosahedronGeometry.html">                 IcosahedronGeometry.js               </a>                                           <a class="source" href="LatheGeometry.html">                 LatheGeometry.js               </a>                                           <a class="source" href="OctahedronGeometry.html">                 OctahedronGeometry.js               </a>                                           <a class="source" href="PlaneGeometry.html">                 PlaneGeometry.js               </a>                                           <a class="source" href="SphereGeometry.html">                 SphereGeometry.js               </a>                                           <a class="source" href="TextGeometry.html">                 TextGeometry.js               </a>                                           <a class="source" href="TorusGeometry.html">                 TorusGeometry.js               </a>                                           <a class="source" href="TorusKnotGeometry.html">                 TorusKnotGeometry.js               </a>                                           <a class="source" href="BinaryLoader.html">                 BinaryLoader.js               </a>                                           <a class="source" href="ColladaLoader.html">                 ColladaLoader.js               </a>                                           <a class="source" href="JSONLoader.html">                 JSONLoader.js               </a>                                           <a class="source" href="Loader.html">                 Loader.js               </a>                                           <a class="source" href="SceneLoader.html">                 SceneLoader.js               </a>                                           <a class="source" href="UTF8Loader.html">                 UTF8Loader.js               </a>                                           <a class="source" href="SubdivisionModifier.html">                 SubdivisionModifier.js               </a>                                           <a class="source" href="Axes.html">                 Axes.js               </a>                                           <a class="source" href="MarchingCubes.html">                 MarchingCubes.js               </a>                                           <a class="source" href="AnaglyphWebGLRenderer.html">                 AnaglyphWebGLRenderer.js               </a>                                           <a class="source" href="CrosseyedWebGLRenderer.html">                 CrosseyedWebGLRenderer.js               </a>                                           <a class="source" href="ParallaxBarrierWebGLRenderer.html">                 ParallaxBarrierWebGLRenderer.js               </a>                                           <a class="source" href="AmbientLight.html">                 AmbientLight.js               </a>                                           <a class="source" href="DirectionalLight.html">                 DirectionalLight.js               </a>                                           <a class="source" href="Light.html">                 Light.js               </a>                                           <a class="source" href="PointLight.html">                 PointLight.js               </a>                                           <a class="source" href="SpotLight.html">                 SpotLight.js               </a>                                           <a class="source" href="LineBasicMaterial.html">                 LineBasicMaterial.js               </a>                                           <a class="source" href="Material.html">                 Material.js               </a>                                           <a class="source" href="MeshBasicMaterial.html">                 MeshBasicMaterial.js               </a>                                           <a class="source" href="MeshDepthMaterial.html">                 MeshDepthMaterial.js               </a>                                           <a class="source" href="MeshFaceMaterial.html">                 MeshFaceMaterial.js               </a>                                           <a class="source" href="MeshLambertMaterial.html">                 MeshLambertMaterial.js               </a>                                           <a class="source" href="MeshNormalMaterial.html">                 MeshNormalMaterial.js               </a>                                           <a class="source" href="MeshPhongMaterial.html">                 MeshPhongMaterial.js               </a>                                           <a class="source" href="MeshShaderMaterial.html">                 MeshShaderMaterial.js               </a>                                           <a class="source" href="ParticleBasicMaterial.html">                 ParticleBasicMaterial.js               </a>                                           <a class="source" href="ParticleCanvasMaterial.html">                 ParticleCanvasMaterial.js               </a>                                           <a class="source" href="ParticleDOMMaterial.html">                 ParticleDOMMaterial.js               </a>                                           <a class="source" href="ShaderMaterial.html">                 ShaderMaterial.js               </a>                                           <a class="source" href="Bone.html">                 Bone.js               </a>                                           <a class="source" href="LOD.html">                 LOD.js               </a>                                           <a class="source" href="Line.html">                 Line.js               </a>                                           <a class="source" href="Mesh.html">                 Mesh.js               </a>                                           <a class="source" href="MorphAnimMesh.html">                 MorphAnimMesh.js               </a>                                           <a class="source" href="Particle.html">                 Particle.js               </a>                                           <a class="source" href="ParticleSystem.html">                 ParticleSystem.js               </a>                                           <a class="source" href="Ribbon.html">                 Ribbon.js               </a>                                           <a class="source" href="SkinnedMesh.html">                 SkinnedMesh.js               </a>                                           <a class="source" href="Sprite.html">                 Sprite.js               </a>                                           <a class="source" href="CanvasRenderer.html">                 CanvasRenderer.js               </a>                                           <a class="source" href="DOMRenderer.html">                 DOMRenderer.js               </a>                                           <a class="source" href="SVGRenderer.html">                 SVGRenderer.js               </a>                                           <a class="source" href="WebGLRenderTarget.html">                 WebGLRenderTarget.js               </a>                                           <a class="source" href="WebGLRenderTargetCube.html">                 WebGLRenderTargetCube.js               </a>                                           <a class="source" href="WebGLRenderer.html">                 WebGLRenderer.js               </a>                                           <a class="source" href="WebGLShaders.html">                 WebGLShaders.js               </a>                                           <a class="source" href="RenderableFace3.html">                 RenderableFace3.js               </a>                                           <a class="source" href="RenderableFace4.html">                 RenderableFace4.js               </a>                                           <a class="source" href="RenderableLine.html">                 RenderableLine.js               </a>                                           <a class="source" href="RenderableObject.html">                 RenderableObject.js               </a>                                           <a class="source" href="RenderableParticle.html">                 RenderableParticle.js               </a>                                           <a class="source" href="RenderableVertex.html">                 RenderableVertex.js               </a>                                           <a class="source" href="Fog.html">                 Fog.js               </a>                                           <a class="source" href="FogExp2.html">                 FogExp2.js               </a>                                           <a class="source" href="Scene.html">                 Scene.js               </a>                                           <a class="source" href="DataTexture.html">                 DataTexture.js               </a>                                           <a class="source" href="Texture.html">                 Texture.js               </a>                        </div>         </div>       </div>          <table cellpadding="0" cellspacing="0">       <thead>         <tr>           <th class="docs">             <h1>               BinaryLoader.js             </h1>           </th>           <th class="code">           </th>         </tr>       </thead>       <tbody>                               <tr id="section-1">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-1">&#182;</a>               </div>                            </td>             <td class="code">               <div class="highlight"><pre><span class="cm">/**</span>
+<span class="cm"> * @author alteredq / http://alteredqualia.com/</span>
+<span class="cm"> */</span>
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">BinaryLoader</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">showStatus</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="nx">THREE</span><span class="p">.</span><span class="nx">Loader</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span> <span class="k">this</span><span class="p">,</span> <span class="nx">showStatus</span> <span class="p">);</span>
+
+<span class="p">};</span>
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">BinaryLoader</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Loader</span><span class="p">();</span>
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">BinaryLoader</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">constructor</span> <span class="o">=</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">BinaryLoader</span><span class="p">;</span>
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">BinaryLoader</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">supr</span> <span class="o">=</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Loader</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span></pre></div>             </td>           </tr>                               <tr id="section-2">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-2">&#182;</a>               </div>               <p>Load models generated by slim OBJ converter with BINARY option (converter<em>obj</em>three_slim.py -t binary)
+ - binary models consist of two files: JS and BIN
+ - parameters
+    - url (required)
+    - callback (required)
+    - texturePath (optional: if not specified, textures will be assumed to be in the same folder as JS model file)
+    - binaryPath (optional: if not specified, binary file will be assumed to be in the same folder as JS model file)</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">THREE</span><span class="p">.</span><span class="nx">BinaryLoader</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">load</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">url</span><span class="p">,</span> <span class="nx">callback</span><span class="p">,</span> <span class="nx">texturePath</span><span class="p">,</span> <span class="nx">binaryPath</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="k">if</span> <span class="p">(</span> <span class="nx">url</span> <span class="k">instanceof</span> <span class="nb">Object</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">console</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span> <span class="s1">&#39;DEPRECATED: BinaryLoader( parameters ) is now BinaryLoader( url, callback, texturePath, binaryPath ).&#39;</span> <span class="p">);</span>
+
+		<span class="kd">var</span> <span class="nx">parameters</span> <span class="o">=</span> <span class="nx">url</span><span class="p">;</span>
+
+		<span class="nx">url</span> <span class="o">=</span> <span class="nx">parameters</span><span class="p">.</span><span class="nx">model</span><span class="p">;</span>
+		<span class="nx">callback</span> <span class="o">=</span> <span class="nx">parameters</span><span class="p">.</span><span class="nx">callback</span><span class="p">;</span>
+		<span class="nx">texturePath</span> <span class="o">=</span> <span class="nx">parameters</span><span class="p">.</span><span class="nx">texture_path</span><span class="p">;</span>
+		<span class="nx">binaryPath</span> <span class="o">=</span> <span class="nx">parameters</span><span class="p">.</span><span class="nx">bin_path</span><span class="p">;</span>
+
+	<span class="p">}</span>
+
+	<span class="nx">texturePath</span> <span class="o">=</span> <span class="nx">texturePath</span> <span class="o">?</span> <span class="nx">texturePath</span> <span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">extractUrlbase</span><span class="p">(</span> <span class="nx">url</span> <span class="p">);</span>
+	<span class="nx">binaryPath</span> <span class="o">=</span> <span class="nx">binaryPath</span> <span class="o">?</span> <span class="nx">binaryPath</span> <span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">extractUrlbase</span><span class="p">(</span> <span class="nx">url</span> <span class="p">);</span>
+
+	<span class="kd">var</span> <span class="nx">callbackProgress</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">showProgress</span> <span class="o">?</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Loader</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">updateProgress</span> <span class="o">:</span> <span class="kc">null</span><span class="p">;</span>
+
+	<span class="k">this</span><span class="p">.</span><span class="nx">onLoadStart</span><span class="p">();</span></pre></div>             </td>           </tr>                               <tr id="section-3">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-3">&#182;</a>               </div>               <h1>1 load JS part via web worker</h1>             </td>             <td class="code">               <div class="highlight"><pre>	<span class="k">this</span><span class="p">.</span><span class="nx">loadAjaxJSON</span><span class="p">(</span> <span class="k">this</span><span class="p">,</span> <span class="nx">url</span><span class="p">,</span> <span class="nx">callback</span><span class="p">,</span> <span class="nx">texturePath</span><span class="p">,</span> <span class="nx">binaryPath</span><span class="p">,</span> <span class="nx">callbackProgress</span> <span class="p">);</span>
+
+<span class="p">};</span>
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">BinaryLoader</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">loadAjaxJSON</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">context</span><span class="p">,</span> <span class="nx">url</span><span class="p">,</span> <span class="nx">callback</span><span class="p">,</span> <span class="nx">texturePath</span><span class="p">,</span> <span class="nx">binaryPath</span><span class="p">,</span> <span class="nx">callbackProgress</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="kd">var</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+
+	<span class="nx">xhr</span><span class="p">.</span><span class="nx">onreadystatechange</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+
+		<span class="k">if</span> <span class="p">(</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mi">4</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">status</span> <span class="o">==</span> <span class="mi">200</span> <span class="o">||</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">status</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="k">try</span> <span class="p">{</span>
+
+					<span class="kd">var</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">responseText</span> <span class="p">);</span>
+
+					<span class="k">if</span> <span class="p">(</span> <span class="nx">json</span><span class="p">.</span><span class="nx">metadata</span> <span class="o">===</span> <span class="kc">undefined</span> <span class="o">||</span> <span class="nx">json</span><span class="p">.</span><span class="nx">metadata</span><span class="p">.</span><span class="nx">formatVersion</span> <span class="o">===</span> <span class="kc">undefined</span> <span class="o">||</span> <span class="nx">json</span><span class="p">.</span><span class="nx">metadata</span><span class="p">.</span><span class="nx">formatVersion</span> <span class="o">!==</span> <span class="mi">3</span> <span class="p">)</span> <span class="p">{</span>
+
+						<span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span> <span class="s1">&#39;Deprecated file format.&#39;</span> <span class="p">);</span>
+						<span class="k">return</span><span class="p">;</span>
+
+					<span class="p">}</span></pre></div>             </td>           </tr>                               <tr id="section-4">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-4">&#182;</a>               </div>               <h1>2 load BIN part via Ajax</h1>             </td>             <td class="code">               <div class="highlight"><pre>					<span class="nx">context</span><span class="p">.</span><span class="nx">loadAjaxBuffers</span><span class="p">(</span> <span class="nx">json</span><span class="p">,</span> <span class="nx">callback</span><span class="p">,</span> <span class="nx">binaryPath</span><span class="p">,</span> <span class="nx">texturePath</span><span class="p">,</span> <span class="nx">callbackProgress</span> <span class="p">);</span>
+
+				<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span> <span class="nx">error</span> <span class="p">)</span> <span class="p">{</span>
+
+					<span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span> <span class="nx">error</span> <span class="p">);</span>
+					<span class="nx">console</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span> <span class="s2">&quot;DEPRECATED: [&quot;</span> <span class="o">+</span> <span class="nx">url</span> <span class="o">+</span> <span class="s2">&quot;] seems to be using old model format&quot;</span> <span class="p">);</span>
+
+				<span class="p">}</span>
+
+			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+				<span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span> <span class="s2">&quot;Couldn&#39;t load [&quot;</span> <span class="o">+</span> <span class="nx">url</span> <span class="o">+</span> <span class="s2">&quot;] [&quot;</span> <span class="o">+</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">status</span> <span class="o">+</span> <span class="s2">&quot;]&quot;</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">}</span>
+
+	<span class="p">};</span>
+
+	<span class="nx">xhr</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span> <span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="nx">url</span><span class="p">,</span> <span class="kc">true</span> <span class="p">);</span>
+	<span class="nx">xhr</span><span class="p">.</span><span class="nx">overrideMimeType</span><span class="p">(</span> <span class="s2">&quot;text/plain; charset=x-user-defined&quot;</span> <span class="p">);</span>
+	<span class="nx">xhr</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span> <span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span> <span class="s2">&quot;text/plain&quot;</span> <span class="p">);</span>
+	<span class="nx">xhr</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span> <span class="kc">null</span> <span class="p">);</span>
+
+<span class="p">};</span>
+
+<span class="nx">THREE</span><span class="p">.</span><span class="nx">BinaryLoader</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">loadAjaxBuffers</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">json</span><span class="p">,</span> <span class="nx">callback</span><span class="p">,</span> <span class="nx">binaryPath</span><span class="p">,</span> <span class="nx">texturePath</span><span class="p">,</span> <span class="nx">callbackProgress</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="kd">var</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">(),</span>
+		<span class="nx">url</span> <span class="o">=</span> <span class="nx">binaryPath</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nx">json</span><span class="p">.</span><span class="nx">buffers</span><span class="p">;</span>
+
+	<span class="kd">var</span> <span class="nx">length</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+	<span class="nx">xhr</span><span class="p">.</span><span class="nx">onreadystatechange</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+
+		<span class="k">if</span> <span class="p">(</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mi">4</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">status</span> <span class="o">==</span> <span class="mi">200</span> <span class="o">||</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">status</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">THREE</span><span class="p">.</span><span class="nx">BinaryLoader</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">createBinModel</span><span class="p">(</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">response</span><span class="p">,</span> <span class="nx">callback</span><span class="p">,</span> <span class="nx">texturePath</span><span class="p">,</span> <span class="nx">json</span><span class="p">.</span><span class="nx">materials</span> <span class="p">);</span>
+
+			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+				<span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span> <span class="s2">&quot;Couldn&#39;t load [&quot;</span> <span class="o">+</span> <span class="nx">url</span> <span class="o">+</span> <span class="s2">&quot;] [&quot;</span> <span class="o">+</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">status</span> <span class="o">+</span> <span class="s2">&quot;]&quot;</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mi">3</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">callbackProgress</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="k">if</span> <span class="p">(</span> <span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+
+					<span class="nx">length</span> <span class="o">=</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">getResponseHeader</span><span class="p">(</span> <span class="s2">&quot;Content-Length&quot;</span> <span class="p">);</span>
+
+				<span class="p">}</span>
+
+				<span class="nx">callbackProgress</span><span class="p">(</span> <span class="p">{</span> <span class="nx">total</span><span class="o">:</span> <span class="nx">length</span><span class="p">,</span> <span class="nx">loaded</span><span class="o">:</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">responseText</span><span class="p">.</span><span class="nx">length</span> <span class="p">}</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mi">2</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="nx">length</span> <span class="o">=</span> <span class="nx">xhr</span><span class="p">.</span><span class="nx">getResponseHeader</span><span class="p">(</span> <span class="s2">&quot;Content-Length&quot;</span> <span class="p">);</span>
+
+		<span class="p">}</span>
+
+	<span class="p">};</span>
+
+	<span class="nx">xhr</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span> <span class="s2">&quot;GET&quot;</span><span class="p">,</span> <span class="nx">url</span><span class="p">,</span> <span class="kc">true</span> <span class="p">);</span>
+	<span class="nx">xhr</span><span class="p">.</span><span class="nx">responseType</span> <span class="o">=</span> <span class="s2">&quot;arraybuffer&quot;</span><span class="p">;</span>
+	<span class="nx">xhr</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span> <span class="kc">null</span> <span class="p">);</span>
+
+<span class="p">};</span></pre></div>             </td>           </tr>                               <tr id="section-5">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-5">&#182;</a>               </div>               <p>Binary AJAX parser</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">THREE</span><span class="p">.</span><span class="nx">BinaryLoader</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">createBinModel</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">callback</span><span class="p">,</span> <span class="nx">texturePath</span><span class="p">,</span> <span class="nx">materials</span> <span class="p">)</span> <span class="p">{</span>
+
+	<span class="kd">var</span> <span class="nx">Model</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">texturePath</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="kd">var</span> <span class="nx">scope</span> <span class="o">=</span> <span class="k">this</span><span class="p">,</span>
+			<span class="nx">currentOffset</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+			<span class="nx">md</span><span class="p">,</span>
+			<span class="nx">normals</span> <span class="o">=</span> <span class="p">[],</span>
+			<span class="nx">uvs</span> <span class="o">=</span> <span class="p">[],</span>
+			<span class="nx">start_tri_flat</span><span class="p">,</span> <span class="nx">start_tri_smooth</span><span class="p">,</span> <span class="nx">start_tri_flat_uv</span><span class="p">,</span> <span class="nx">start_tri_smooth_uv</span><span class="p">,</span>
+			<span class="nx">start_quad_flat</span><span class="p">,</span> <span class="nx">start_quad_smooth</span><span class="p">,</span> <span class="nx">start_quad_flat_uv</span><span class="p">,</span> <span class="nx">start_quad_smooth_uv</span><span class="p">,</span>
+			<span class="nx">tri_size</span><span class="p">,</span> <span class="nx">quad_size</span><span class="p">,</span>
+			<span class="nx">len_tri_flat</span><span class="p">,</span> <span class="nx">len_tri_smooth</span><span class="p">,</span> <span class="nx">len_tri_flat_uv</span><span class="p">,</span> <span class="nx">len_tri_smooth_uv</span><span class="p">,</span>
+			<span class="nx">len_quad_flat</span><span class="p">,</span> <span class="nx">len_quad_smooth</span><span class="p">,</span> <span class="nx">len_quad_flat_uv</span><span class="p">,</span> <span class="nx">len_quad_smooth_uv</span><span class="p">;</span>
+
+
+		<span class="nx">THREE</span><span class="p">.</span><span class="nx">Geometry</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span> <span class="k">this</span> <span class="p">);</span>
+
+		<span class="nx">THREE</span><span class="p">.</span><span class="nx">Loader</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">initMaterials</span><span class="p">(</span> <span class="nx">scope</span><span class="p">,</span> <span class="nx">materials</span><span class="p">,</span> <span class="nx">texturePath</span> <span class="p">);</span>
+
+		<span class="nx">md</span> <span class="o">=</span> <span class="nx">parseMetaData</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">currentOffset</span> <span class="p">);</span>
+
+		<span class="k">if</span> <span class="p">(</span> <span class="nx">md</span><span class="p">.</span><span class="nx">signature</span> <span class="o">!==</span> <span class="s2">&quot;Three.js 003&quot;</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="nx">console</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span> <span class="s2">&quot;DEPRECATED: binary model seems to be using old format&quot;</span> <span class="p">);</span>
+
+		<span class="p">}</span>
+
+		<span class="nx">currentOffset</span> <span class="o">+=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">header_bytes</span><span class="p">;</span>
+<span class="cm">/*</span>
+<span class="cm">		md.vertex_index_bytes = Uint32Array.BYTES_PER_ELEMENT;</span>
+<span class="cm">		md.material_index_bytes = Uint16Array.BYTES_PER_ELEMENT;</span>
+<span class="cm">		md.normal_index_bytes = Uint32Array.BYTES_PER_ELEMENT;</span>
+<span class="cm">		md.uv_index_bytes = Uint32Array.BYTES_PER_ELEMENT;</span>
+<span class="cm">*/</span></pre></div>             </td>           </tr>                               <tr id="section-6">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-6">&#182;</a>               </div>               <p>buffers sizes</p>             </td>             <td class="code">               <div class="highlight"><pre>		<span class="nx">tri_size</span> <span class="o">=</span>  <span class="nx">md</span><span class="p">.</span><span class="nx">vertex_index_bytes</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="nx">md</span><span class="p">.</span><span class="nx">material_index_bytes</span><span class="p">;</span>
+		<span class="nx">quad_size</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">vertex_index_bytes</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="nx">md</span><span class="p">.</span><span class="nx">material_index_bytes</span><span class="p">;</span>
+
+		<span class="nx">len_tri_flat</span>      <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">ntri_flat</span>      <span class="o">*</span> <span class="p">(</span> <span class="nx">tri_size</span> <span class="p">);</span>
+		<span class="nx">len_tri_smooth</span>    <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">ntri_smooth</span>    <span class="o">*</span> <span class="p">(</span> <span class="nx">tri_size</span> <span class="o">+</span> <span class="nx">md</span><span class="p">.</span><span class="nx">normal_index_bytes</span> <span class="o">*</span> <span class="mi">3</span> <span class="p">);</span>
+		<span class="nx">len_tri_flat_uv</span>   <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">ntri_flat_uv</span>   <span class="o">*</span> <span class="p">(</span> <span class="nx">tri_size</span> <span class="o">+</span> <span class="nx">md</span><span class="p">.</span><span class="nx">uv_index_bytes</span> <span class="o">*</span> <span class="mi">3</span> <span class="p">);</span>
+		<span class="nx">len_tri_smooth_uv</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">ntri_smooth_uv</span> <span class="o">*</span> <span class="p">(</span> <span class="nx">tri_size</span> <span class="o">+</span> <span class="nx">md</span><span class="p">.</span><span class="nx">normal_index_bytes</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="nx">md</span><span class="p">.</span><span class="nx">uv_index_bytes</span> <span class="o">*</span> <span class="mi">3</span> <span class="p">);</span>
+
+		<span class="nx">len_quad_flat</span>      <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nquad_flat</span>      <span class="o">*</span> <span class="p">(</span> <span class="nx">quad_size</span> <span class="p">);</span>
+		<span class="nx">len_quad_smooth</span>    <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nquad_smooth</span>    <span class="o">*</span> <span class="p">(</span> <span class="nx">quad_size</span> <span class="o">+</span> <span class="nx">md</span><span class="p">.</span><span class="nx">normal_index_bytes</span> <span class="o">*</span> <span class="mi">4</span> <span class="p">);</span>
+		<span class="nx">len_quad_flat_uv</span>   <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nquad_flat_uv</span>   <span class="o">*</span> <span class="p">(</span> <span class="nx">quad_size</span> <span class="o">+</span> <span class="nx">md</span><span class="p">.</span><span class="nx">uv_index_bytes</span> <span class="o">*</span> <span class="mi">4</span> <span class="p">);</span>
+		<span class="nx">len_quad_smooth_uv</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nquad_smooth_uv</span> <span class="o">*</span> <span class="p">(</span> <span class="nx">quad_size</span> <span class="o">+</span> <span class="nx">md</span><span class="p">.</span><span class="nx">normal_index_bytes</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="nx">md</span><span class="p">.</span><span class="nx">uv_index_bytes</span> <span class="o">*</span> <span class="mi">4</span> <span class="p">);</span></pre></div>             </td>           </tr>                               <tr id="section-7">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-7">&#182;</a>               </div>               <p>read buffers</p>             </td>             <td class="code">               <div class="highlight"><pre>		<span class="nx">currentOffset</span> <span class="o">+=</span> <span class="nx">init_vertices</span><span class="p">(</span> <span class="nx">currentOffset</span> <span class="p">);</span>
+
+		<span class="nx">currentOffset</span> <span class="o">+=</span> <span class="nx">init_normals</span><span class="p">(</span> <span class="nx">currentOffset</span> <span class="p">);</span>
+		<span class="nx">currentOffset</span> <span class="o">+=</span> <span class="nx">handlePadding</span><span class="p">(</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nnormals</span> <span class="o">*</span> <span class="mi">3</span> <span class="p">);</span>
+
+		<span class="nx">currentOffset</span> <span class="o">+=</span> <span class="nx">init_uvs</span><span class="p">(</span> <span class="nx">currentOffset</span> <span class="p">);</span>
+
+		<span class="nx">start_tri_flat</span> 		<span class="o">=</span> <span class="nx">currentOffset</span><span class="p">;</span>
+		<span class="nx">start_tri_smooth</span>    <span class="o">=</span> <span class="nx">start_tri_flat</span>    <span class="o">+</span> <span class="nx">len_tri_flat</span>    <span class="o">+</span> <span class="nx">handlePadding</span><span class="p">(</span> <span class="nx">md</span><span class="p">.</span><span class="nx">ntri_flat</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">);</span>
+		<span class="nx">start_tri_flat_uv</span>   <span class="o">=</span> <span class="nx">start_tri_smooth</span>  <span class="o">+</span> <span class="nx">len_tri_smooth</span>  <span class="o">+</span> <span class="nx">handlePadding</span><span class="p">(</span> <span class="nx">md</span><span class="p">.</span><span class="nx">ntri_smooth</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">);</span>
+		<span class="nx">start_tri_smooth_uv</span> <span class="o">=</span> <span class="nx">start_tri_flat_uv</span> <span class="o">+</span> <span class="nx">len_tri_flat_uv</span> <span class="o">+</span> <span class="nx">handlePadding</span><span class="p">(</span> <span class="nx">md</span><span class="p">.</span><span class="nx">ntri_flat_uv</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">);</span>
+
+		<span class="nx">start_quad_flat</span>     <span class="o">=</span> <span class="nx">start_tri_smooth_uv</span> <span class="o">+</span> <span class="nx">len_tri_smooth_uv</span>  <span class="o">+</span> <span class="nx">handlePadding</span><span class="p">(</span> <span class="nx">md</span><span class="p">.</span><span class="nx">ntri_smooth_uv</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">);</span>
+		<span class="nx">start_quad_smooth</span>   <span class="o">=</span> <span class="nx">start_quad_flat</span>     <span class="o">+</span> <span class="nx">len_quad_flat</span>	   <span class="o">+</span> <span class="nx">handlePadding</span><span class="p">(</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nquad_flat</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">);</span>
+		<span class="nx">start_quad_flat_uv</span>  <span class="o">=</span> <span class="nx">start_quad_smooth</span>   <span class="o">+</span> <span class="nx">len_quad_smooth</span>    <span class="o">+</span> <span class="nx">handlePadding</span><span class="p">(</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nquad_smooth</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">);</span>
+		<span class="nx">start_quad_smooth_uv</span><span class="o">=</span> <span class="nx">start_quad_flat_uv</span>  <span class="o">+</span> <span class="nx">len_quad_flat_uv</span>   <span class="o">+</span> <span class="nx">handlePadding</span><span class="p">(</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nquad_flat_uv</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">);</span></pre></div>             </td>           </tr>                               <tr id="section-8">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-8">&#182;</a>               </div>               <p>have to first process faces with uvs
+so that face and uv indices match</p>             </td>             <td class="code">               <div class="highlight"><pre>		<span class="nx">init_triangles_flat_uv</span><span class="p">(</span> <span class="nx">start_tri_flat_uv</span> <span class="p">);</span>
+		<span class="nx">init_triangles_smooth_uv</span><span class="p">(</span> <span class="nx">start_tri_smooth_uv</span> <span class="p">);</span>
+
+		<span class="nx">init_quads_flat_uv</span><span class="p">(</span> <span class="nx">start_quad_flat_uv</span> <span class="p">);</span>
+		<span class="nx">init_quads_smooth_uv</span><span class="p">(</span> <span class="nx">start_quad_smooth_uv</span> <span class="p">);</span></pre></div>             </td>           </tr>                               <tr id="section-9">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-9">&#182;</a>               </div>               <p>now we can process untextured faces</p>             </td>             <td class="code">               <div class="highlight"><pre>		<span class="nx">init_triangles_flat</span><span class="p">(</span> <span class="nx">start_tri_flat</span> <span class="p">);</span>
+		<span class="nx">init_triangles_smooth</span><span class="p">(</span> <span class="nx">start_tri_smooth</span> <span class="p">);</span>
+
+		<span class="nx">init_quads_flat</span><span class="p">(</span> <span class="nx">start_quad_flat</span> <span class="p">);</span>
+		<span class="nx">init_quads_smooth</span><span class="p">(</span> <span class="nx">start_quad_smooth</span> <span class="p">);</span>
+
+		<span class="k">this</span><span class="p">.</span><span class="nx">computeCentroids</span><span class="p">();</span>
+		<span class="k">this</span><span class="p">.</span><span class="nx">computeFaceNormals</span><span class="p">();</span>
+
+		<span class="k">if</span> <span class="p">(</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Loader</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">hasNormals</span><span class="p">(</span> <span class="k">this</span> <span class="p">)</span> <span class="p">)</span> <span class="k">this</span><span class="p">.</span><span class="nx">computeTangents</span><span class="p">();</span>
+
+		<span class="kd">function</span> <span class="nx">handlePadding</span><span class="p">(</span> <span class="nx">n</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="k">return</span> <span class="p">(</span> <span class="nx">n</span> <span class="o">%</span> <span class="mi">4</span> <span class="p">)</span> <span class="o">?</span> <span class="p">(</span> <span class="mi">4</span> <span class="o">-</span> <span class="nx">n</span> <span class="o">%</span> <span class="mi">4</span> <span class="p">)</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">parseMetaData</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">metaData</span> <span class="o">=</span> <span class="p">{</span>
+
+				<span class="s1">&#39;signature&#39;</span>               <span class="o">:</span><span class="nx">parseString</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span><span class="p">,</span>  <span class="mi">12</span> <span class="p">),</span>
+				<span class="s1">&#39;header_bytes&#39;</span>            <span class="o">:</span><span class="nx">parseUChar8</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">12</span> <span class="p">),</span>
+
+				<span class="s1">&#39;vertex_coordinate_bytes&#39;</span> <span class="o">:</span><span class="nx">parseUChar8</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">13</span> <span class="p">),</span>
+				<span class="s1">&#39;normal_coordinate_bytes&#39;</span> <span class="o">:</span><span class="nx">parseUChar8</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">14</span> <span class="p">),</span>
+				<span class="s1">&#39;uv_coordinate_bytes&#39;</span>     <span class="o">:</span><span class="nx">parseUChar8</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">15</span> <span class="p">),</span>
+
+				<span class="s1">&#39;vertex_index_bytes&#39;</span>      <span class="o">:</span><span class="nx">parseUChar8</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">16</span> <span class="p">),</span>
+				<span class="s1">&#39;normal_index_bytes&#39;</span>      <span class="o">:</span><span class="nx">parseUChar8</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">17</span> <span class="p">),</span>
+				<span class="s1">&#39;uv_index_bytes&#39;</span>          <span class="o">:</span><span class="nx">parseUChar8</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">18</span> <span class="p">),</span>
+				<span class="s1">&#39;material_index_bytes&#39;</span>    <span class="o">:</span><span class="nx">parseUChar8</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">19</span> <span class="p">),</span>
+
+				<span class="s1">&#39;nvertices&#39;</span>    <span class="o">:</span><span class="nx">parseUInt32</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">20</span> <span class="p">),</span>
+				<span class="s1">&#39;nnormals&#39;</span>     <span class="o">:</span><span class="nx">parseUInt32</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="mi">1</span> <span class="p">),</span>
+				<span class="s1">&#39;nuvs&#39;</span>         <span class="o">:</span><span class="nx">parseUInt32</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="mi">2</span> <span class="p">),</span>
+
+				<span class="s1">&#39;ntri_flat&#39;</span>      <span class="o">:</span><span class="nx">parseUInt32</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="mi">3</span> <span class="p">),</span>
+				<span class="s1">&#39;ntri_smooth&#39;</span>    <span class="o">:</span><span class="nx">parseUInt32</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="mi">4</span> <span class="p">),</span>
+				<span class="s1">&#39;ntri_flat_uv&#39;</span>   <span class="o">:</span><span class="nx">parseUInt32</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="mi">5</span> <span class="p">),</span>
+				<span class="s1">&#39;ntri_smooth_uv&#39;</span> <span class="o">:</span><span class="nx">parseUInt32</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="mi">6</span> <span class="p">),</span>
+
+				<span class="s1">&#39;nquad_flat&#39;</span>      <span class="o">:</span><span class="nx">parseUInt32</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="mi">7</span> <span class="p">),</span>
+				<span class="s1">&#39;nquad_smooth&#39;</span>    <span class="o">:</span><span class="nx">parseUInt32</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="mi">8</span> <span class="p">),</span>
+				<span class="s1">&#39;nquad_flat_uv&#39;</span>   <span class="o">:</span><span class="nx">parseUInt32</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="mi">9</span> <span class="p">),</span>
+				<span class="s1">&#39;nquad_smooth_uv&#39;</span> <span class="o">:</span><span class="nx">parseUInt32</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="o">+</span> <span class="mi">20</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="mi">10</span> <span class="p">)</span>
+
+			<span class="p">};</span>
+<span class="cm">/*</span>
+<span class="cm">			console.log( &quot;signature: &quot; + metaData.signature );</span>
+
+<span class="cm">			console.log( &quot;header_bytes: &quot; + metaData.header_bytes );</span>
+<span class="cm">			console.log( &quot;vertex_coordinate_bytes: &quot; + metaData.vertex_coordinate_bytes );</span>
+<span class="cm">			console.log( &quot;normal_coordinate_bytes: &quot; + metaData.normal_coordinate_bytes );</span>
+<span class="cm">			console.log( &quot;uv_coordinate_bytes: &quot; + metaData.uv_coordinate_bytes );</span>
+
+<span class="cm">			console.log( &quot;vertex_index_bytes: &quot; + metaData.vertex_index_bytes );</span>
+<span class="cm">			console.log( &quot;normal_index_bytes: &quot; + metaData.normal_index_bytes );</span>
+<span class="cm">			console.log( &quot;uv_index_bytes: &quot; + metaData.uv_index_bytes );</span>
+<span class="cm">			console.log( &quot;material_index_bytes: &quot; + metaData.material_index_bytes );</span>
+
+<span class="cm">			console.log( &quot;nvertices: &quot; + metaData.nvertices );</span>
+<span class="cm">			console.log( &quot;nnormals: &quot; + metaData.nnormals );</span>
+<span class="cm">			console.log( &quot;nuvs: &quot; + metaData.nuvs );</span>
+
+<span class="cm">			console.log( &quot;ntri_flat: &quot; + metaData.ntri_flat );</span>
+<span class="cm">			console.log( &quot;ntri_smooth: &quot; + metaData.ntri_smooth );</span>
+<span class="cm">			console.log( &quot;ntri_flat_uv: &quot; + metaData.ntri_flat_uv );</span>
+<span class="cm">			console.log( &quot;ntri_smooth_uv: &quot; + metaData.ntri_smooth_uv );</span>
+
+<span class="cm">			console.log( &quot;nquad_flat: &quot; + metaData.nquad_flat );</span>
+<span class="cm">			console.log( &quot;nquad_smooth: &quot; + metaData.nquad_smooth );</span>
+<span class="cm">			console.log( &quot;nquad_flat_uv: &quot; + metaData.nquad_flat_uv );</span>
+<span class="cm">			console.log( &quot;nquad_smooth_uv: &quot; + metaData.nquad_smooth_uv );</span>
+
+<span class="cm">			var total = metaData.header_bytes</span>
+<span class="cm">					  + metaData.nvertices * metaData.vertex_coordinate_bytes * 3</span>
+<span class="cm">					  + metaData.nnormals * metaData.normal_coordinate_bytes * 3</span>
+<span class="cm">					  + metaData.nuvs * metaData.uv_coordinate_bytes * 2</span>
+<span class="cm">					  + metaData.ntri_flat * ( metaData.vertex_index_bytes*3 + metaData.material_index_bytes )</span>
+<span class="cm">					  + metaData.ntri_smooth * ( metaData.vertex_index_bytes*3 + metaData.material_index_bytes + metaData.normal_index_bytes*3 )</span>
+<span class="cm">					  + metaData.ntri_flat_uv * ( metaData.vertex_index_bytes*3 + metaData.material_index_bytes + metaData.uv_index_bytes*3 )</span>
+<span class="cm">					  + metaData.ntri_smooth_uv * ( metaData.vertex_index_bytes*3 + metaData.material_index_bytes + metaData.normal_index_bytes*3 + metaData.uv_index_bytes*3 )</span>
+<span class="cm">					  + metaData.nquad_flat * ( metaData.vertex_index_bytes*4 + metaData.material_index_bytes )</span>
+<span class="cm">					  + metaData.nquad_smooth * ( metaData.vertex_index_bytes*4 + metaData.material_index_bytes + metaData.normal_index_bytes*4 )</span>
+<span class="cm">					  + metaData.nquad_flat_uv * ( metaData.vertex_index_bytes*4 + metaData.material_index_bytes + metaData.uv_index_bytes*4 )</span>
+<span class="cm">					  + metaData.nquad_smooth_uv * ( metaData.vertex_index_bytes*4 + metaData.material_index_bytes + metaData.normal_index_bytes*4 + metaData.uv_index_bytes*4 );</span>
+<span class="cm">			console.log( &quot;total bytes: &quot; + total );</span>
+<span class="cm">*/</span>
+
+			<span class="k">return</span> <span class="nx">metaData</span><span class="p">;</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">parseString</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span><span class="p">,</span> <span class="nx">length</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">charArray</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint8Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span><span class="p">,</span> <span class="nx">length</span> <span class="p">);</span>
+
+			<span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+
+			<span class="k">for</span> <span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">text</span> <span class="o">+=</span> <span class="nb">String</span><span class="p">.</span><span class="nx">fromCharCode</span><span class="p">(</span> <span class="nx">charArray</span><span class="p">[</span> <span class="nx">offset</span> <span class="o">+</span> <span class="nx">i</span> <span class="p">]</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+			<span class="k">return</span> <span class="nx">text</span><span class="p">;</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">parseUChar8</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">charArray</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint8Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span><span class="p">,</span> <span class="mi">1</span> <span class="p">);</span>
+
+			<span class="k">return</span> <span class="nx">charArray</span><span class="p">[</span> <span class="mi">0</span> <span class="p">];</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">parseUInt32</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">intArray</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint32Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span><span class="p">,</span> <span class="mi">1</span> <span class="p">);</span>
+
+			<span class="k">return</span> <span class="nx">intArray</span><span class="p">[</span> <span class="mi">0</span> <span class="p">];</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_vertices</span><span class="p">(</span> <span class="nx">start</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">nElements</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nvertices</span><span class="p">;</span>
+
+			<span class="kd">var</span> <span class="nx">coordArray</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Float32Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">start</span><span class="p">,</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="mi">3</span> <span class="p">);</span>
+
+			<span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">z</span><span class="p">;</span>
+
+			<span class="k">for</span><span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">nElements</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">x</span> <span class="o">=</span> <span class="nx">coordArray</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="p">];</span>
+				<span class="nx">y</span> <span class="o">=</span> <span class="nx">coordArray</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+				<span class="nx">z</span> <span class="o">=</span> <span class="nx">coordArray</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">];</span>
+
+				<span class="nx">vertex</span><span class="p">(</span> <span class="nx">scope</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">z</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+			<span class="k">return</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">*</span> <span class="nx">Float32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span><span class="p">;</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_normals</span><span class="p">(</span> <span class="nx">start</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">nElements</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nnormals</span><span class="p">;</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">nElements</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="kd">var</span> <span class="nx">normalArray</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Int8Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">start</span><span class="p">,</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="mi">3</span> <span class="p">);</span>
+
+				<span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">z</span><span class="p">;</span>
+
+				<span class="k">for</span><span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">nElements</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+					<span class="nx">x</span> <span class="o">=</span> <span class="nx">normalArray</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="p">];</span>
+					<span class="nx">y</span> <span class="o">=</span> <span class="nx">normalArray</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+					<span class="nx">z</span> <span class="o">=</span> <span class="nx">normalArray</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">];</span>
+
+					<span class="nx">normals</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">x</span><span class="o">/</span><span class="mi">127</span><span class="p">,</span> <span class="nx">y</span><span class="o">/</span><span class="mi">127</span><span class="p">,</span> <span class="nx">z</span><span class="o">/</span><span class="mi">127</span> <span class="p">);</span>
+
+				<span class="p">}</span>
+
+			<span class="p">}</span>
+
+			<span class="k">return</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">*</span> <span class="nx">Int8Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span><span class="p">;</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_uvs</span><span class="p">(</span> <span class="nx">start</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">nElements</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nuvs</span><span class="p">;</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">nElements</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="kd">var</span> <span class="nx">uvArray</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Float32Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">start</span><span class="p">,</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">);</span>
+
+				<span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">u</span><span class="p">,</span> <span class="nx">v</span><span class="p">;</span>
+
+				<span class="k">for</span><span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">nElements</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+					<span class="nx">u</span> <span class="o">=</span> <span class="nx">uvArray</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">];</span>
+					<span class="nx">v</span> <span class="o">=</span> <span class="nx">uvArray</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+
+					<span class="nx">uvs</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">u</span><span class="p">,</span> <span class="nx">v</span> <span class="p">);</span>
+
+				<span class="p">}</span>
+
+			<span class="p">}</span>
+
+			<span class="k">return</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="nx">Float32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span><span class="p">;</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_uvs3</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">offset</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">uva</span><span class="p">,</span> <span class="nx">uvb</span><span class="p">,</span> <span class="nx">uvc</span><span class="p">,</span> <span class="nx">u1</span><span class="p">,</span> <span class="nx">u2</span><span class="p">,</span> <span class="nx">u3</span><span class="p">,</span> <span class="nx">v1</span><span class="p">,</span> <span class="nx">v2</span><span class="p">,</span> <span class="nx">v3</span><span class="p">;</span>
+
+			<span class="kd">var</span> <span class="nx">uvIndexBuffer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint32Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span><span class="p">,</span> <span class="mi">3</span> <span class="o">*</span> <span class="nx">nElements</span> <span class="p">);</span>
+
+			<span class="k">for</span><span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">nElements</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">uva</span> <span class="o">=</span> <span class="nx">uvIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="p">];</span>
+				<span class="nx">uvb</span> <span class="o">=</span> <span class="nx">uvIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+				<span class="nx">uvc</span> <span class="o">=</span> <span class="nx">uvIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">];</span>
+
+				<span class="nx">u1</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uva</span><span class="o">*</span><span class="mi">2</span> <span class="p">];</span>
+				<span class="nx">v1</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uva</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+
+				<span class="nx">u2</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uvb</span><span class="o">*</span><span class="mi">2</span> <span class="p">];</span>
+				<span class="nx">v2</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uvb</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+
+				<span class="nx">u3</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uvc</span><span class="o">*</span><span class="mi">2</span> <span class="p">];</span>
+				<span class="nx">v3</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uvc</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+
+				<span class="nx">uv3</span><span class="p">(</span> <span class="nx">scope</span><span class="p">.</span><span class="nx">faceVertexUvs</span><span class="p">[</span> <span class="mi">0</span> <span class="p">],</span> <span class="nx">u1</span><span class="p">,</span> <span class="nx">v1</span><span class="p">,</span> <span class="nx">u2</span><span class="p">,</span> <span class="nx">v2</span><span class="p">,</span> <span class="nx">u3</span><span class="p">,</span> <span class="nx">v3</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_uvs4</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">offset</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">uva</span><span class="p">,</span> <span class="nx">uvb</span><span class="p">,</span> <span class="nx">uvc</span><span class="p">,</span> <span class="nx">uvd</span><span class="p">,</span> <span class="nx">u1</span><span class="p">,</span> <span class="nx">u2</span><span class="p">,</span> <span class="nx">u3</span><span class="p">,</span> <span class="nx">u4</span><span class="p">,</span> <span class="nx">v1</span><span class="p">,</span> <span class="nx">v2</span><span class="p">,</span> <span class="nx">v3</span><span class="p">,</span> <span class="nx">v4</span><span class="p">;</span>
+
+			<span class="kd">var</span> <span class="nx">uvIndexBuffer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint32Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offset</span><span class="p">,</span> <span class="mi">4</span> <span class="o">*</span> <span class="nx">nElements</span> <span class="p">);</span>
+
+			<span class="k">for</span><span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">nElements</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">uva</span> <span class="o">=</span> <span class="nx">uvIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="p">];</span>
+				<span class="nx">uvb</span> <span class="o">=</span> <span class="nx">uvIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+				<span class="nx">uvc</span> <span class="o">=</span> <span class="nx">uvIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">];</span>
+				<span class="nx">uvd</span> <span class="o">=</span> <span class="nx">uvIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">3</span> <span class="p">];</span>
+
+				<span class="nx">u1</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uva</span><span class="o">*</span><span class="mi">2</span> <span class="p">];</span>
+				<span class="nx">v1</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uva</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+
+				<span class="nx">u2</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uvb</span><span class="o">*</span><span class="mi">2</span> <span class="p">];</span>
+				<span class="nx">v2</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uvb</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+
+				<span class="nx">u3</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uvc</span><span class="o">*</span><span class="mi">2</span> <span class="p">];</span>
+				<span class="nx">v3</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uvc</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+
+				<span class="nx">u4</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uvd</span><span class="o">*</span><span class="mi">2</span> <span class="p">];</span>
+				<span class="nx">v4</span> <span class="o">=</span> <span class="nx">uvs</span><span class="p">[</span> <span class="nx">uvd</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+
+				<span class="nx">uv4</span><span class="p">(</span> <span class="nx">scope</span><span class="p">.</span><span class="nx">faceVertexUvs</span><span class="p">[</span> <span class="mi">0</span> <span class="p">],</span> <span class="nx">u1</span><span class="p">,</span> <span class="nx">v1</span><span class="p">,</span> <span class="nx">u2</span><span class="p">,</span> <span class="nx">v2</span><span class="p">,</span> <span class="nx">u3</span><span class="p">,</span> <span class="nx">v3</span><span class="p">,</span> <span class="nx">u4</span><span class="p">,</span> <span class="nx">v4</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_faces3_flat</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">offsetVertices</span><span class="p">,</span> <span class="nx">offsetMaterials</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">m</span><span class="p">;</span>
+
+			<span class="kd">var</span> <span class="nx">vertexIndexBuffer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint32Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offsetVertices</span><span class="p">,</span> <span class="mi">3</span> <span class="o">*</span> <span class="nx">nElements</span> <span class="p">);</span>
+			<span class="kd">var</span> <span class="nx">materialIndexBuffer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint16Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offsetMaterials</span><span class="p">,</span> <span class="nx">nElements</span> <span class="p">);</span>
+
+			<span class="k">for</span><span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">nElements</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">a</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="p">];</span>
+				<span class="nx">b</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+				<span class="nx">c</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">];</span>
+
+				<span class="nx">m</span> <span class="o">=</span> <span class="nx">materialIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="p">];</span>
+
+				<span class="nx">f3</span><span class="p">(</span> <span class="nx">scope</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">m</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_faces4_flat</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">offsetVertices</span><span class="p">,</span> <span class="nx">offsetMaterials</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">,</span> <span class="nx">m</span><span class="p">;</span>
+
+			<span class="kd">var</span> <span class="nx">vertexIndexBuffer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint32Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offsetVertices</span><span class="p">,</span> <span class="mi">4</span> <span class="o">*</span> <span class="nx">nElements</span> <span class="p">);</span>
+			<span class="kd">var</span> <span class="nx">materialIndexBuffer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint16Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offsetMaterials</span><span class="p">,</span> <span class="nx">nElements</span> <span class="p">);</span>
+
+			<span class="k">for</span><span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">nElements</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">a</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="p">];</span>
+				<span class="nx">b</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+				<span class="nx">c</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">];</span>
+				<span class="nx">d</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">3</span> <span class="p">];</span>
+
+				<span class="nx">m</span> <span class="o">=</span> <span class="nx">materialIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="p">];</span>
+
+				<span class="nx">f4</span><span class="p">(</span> <span class="nx">scope</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">,</span> <span class="nx">m</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_faces3_smooth</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">offsetVertices</span><span class="p">,</span> <span class="nx">offsetNormals</span><span class="p">,</span> <span class="nx">offsetMaterials</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">m</span><span class="p">;</span>
+			<span class="kd">var</span> <span class="nx">na</span><span class="p">,</span> <span class="nx">nb</span><span class="p">,</span> <span class="nx">nc</span><span class="p">;</span>
+
+			<span class="kd">var</span> <span class="nx">vertexIndexBuffer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint32Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offsetVertices</span><span class="p">,</span> <span class="mi">3</span> <span class="o">*</span> <span class="nx">nElements</span> <span class="p">);</span>
+			<span class="kd">var</span> <span class="nx">normalIndexBuffer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint32Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offsetNormals</span><span class="p">,</span> <span class="mi">3</span> <span class="o">*</span> <span class="nx">nElements</span> <span class="p">);</span>
+			<span class="kd">var</span> <span class="nx">materialIndexBuffer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint16Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offsetMaterials</span><span class="p">,</span> <span class="nx">nElements</span> <span class="p">);</span>
+
+			<span class="k">for</span><span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">nElements</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">a</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="p">];</span>
+				<span class="nx">b</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+				<span class="nx">c</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">];</span>
+
+				<span class="nx">na</span> <span class="o">=</span> <span class="nx">normalIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="p">];</span>
+				<span class="nx">nb</span> <span class="o">=</span> <span class="nx">normalIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+				<span class="nx">nc</span> <span class="o">=</span> <span class="nx">normalIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">];</span>
+
+				<span class="nx">m</span> <span class="o">=</span> <span class="nx">materialIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="p">];</span>
+
+				<span class="nx">f3n</span><span class="p">(</span> <span class="nx">scope</span><span class="p">,</span> <span class="nx">normals</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">m</span><span class="p">,</span> <span class="nx">na</span><span class="p">,</span> <span class="nx">nb</span><span class="p">,</span> <span class="nx">nc</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_faces4_smooth</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">offsetVertices</span><span class="p">,</span> <span class="nx">offsetNormals</span><span class="p">,</span> <span class="nx">offsetMaterials</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">,</span> <span class="nx">m</span><span class="p">;</span>
+			<span class="kd">var</span> <span class="nx">na</span><span class="p">,</span> <span class="nx">nb</span><span class="p">,</span> <span class="nx">nc</span><span class="p">,</span> <span class="nx">nd</span><span class="p">;</span>
+
+			<span class="kd">var</span> <span class="nx">vertexIndexBuffer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint32Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offsetVertices</span><span class="p">,</span> <span class="mi">4</span> <span class="o">*</span> <span class="nx">nElements</span> <span class="p">);</span>
+			<span class="kd">var</span> <span class="nx">normalIndexBuffer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint32Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offsetNormals</span><span class="p">,</span> <span class="mi">4</span> <span class="o">*</span> <span class="nx">nElements</span> <span class="p">);</span>
+			<span class="kd">var</span> <span class="nx">materialIndexBuffer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Uint16Array</span><span class="p">(</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">offsetMaterials</span><span class="p">,</span> <span class="nx">nElements</span> <span class="p">);</span>
+
+			<span class="k">for</span><span class="p">(</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">nElements</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="nx">a</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="p">];</span>
+				<span class="nx">b</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+				<span class="nx">c</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">];</span>
+				<span class="nx">d</span> <span class="o">=</span> <span class="nx">vertexIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">3</span> <span class="p">];</span>
+
+				<span class="nx">na</span> <span class="o">=</span> <span class="nx">normalIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="p">];</span>
+				<span class="nx">nb</span> <span class="o">=</span> <span class="nx">normalIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">];</span>
+				<span class="nx">nc</span> <span class="o">=</span> <span class="nx">normalIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">];</span>
+				<span class="nx">nd</span> <span class="o">=</span> <span class="nx">normalIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">3</span> <span class="p">];</span>
+
+				<span class="nx">m</span> <span class="o">=</span> <span class="nx">materialIndexBuffer</span><span class="p">[</span> <span class="nx">i</span> <span class="p">];</span>
+
+				<span class="nx">f4n</span><span class="p">(</span> <span class="nx">scope</span><span class="p">,</span> <span class="nx">normals</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">,</span> <span class="nx">m</span><span class="p">,</span> <span class="nx">na</span><span class="p">,</span> <span class="nx">nb</span><span class="p">,</span> <span class="nx">nc</span><span class="p">,</span> <span class="nx">nd</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_triangles_flat</span><span class="p">(</span> <span class="nx">start</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">nElements</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">ntri_flat</span><span class="p">;</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">nElements</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="kd">var</span> <span class="nx">offsetMaterials</span> <span class="o">=</span> <span class="nx">start</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">3</span><span class="p">;</span>
+				<span class="nx">init_faces3_flat</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">start</span><span class="p">,</span> <span class="nx">offsetMaterials</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_triangles_flat_uv</span><span class="p">(</span> <span class="nx">start</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">nElements</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">ntri_flat_uv</span><span class="p">;</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">nElements</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="kd">var</span> <span class="nx">offsetUvs</span> <span class="o">=</span> <span class="nx">start</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">3</span><span class="p">;</span>
+				<span class="kd">var</span> <span class="nx">offsetMaterials</span> <span class="o">=</span> <span class="nx">offsetUvs</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">3</span><span class="p">;</span>
+
+				<span class="nx">init_faces3_flat</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">start</span><span class="p">,</span> <span class="nx">offsetMaterials</span> <span class="p">);</span>
+				<span class="nx">init_uvs3</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">offsetUvs</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_triangles_smooth</span><span class="p">(</span> <span class="nx">start</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">nElements</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">ntri_smooth</span><span class="p">;</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">nElements</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="kd">var</span> <span class="nx">offsetNormals</span> <span class="o">=</span> <span class="nx">start</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">3</span><span class="p">;</span>
+				<span class="kd">var</span> <span class="nx">offsetMaterials</span> <span class="o">=</span> <span class="nx">offsetNormals</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">3</span><span class="p">;</span>
+
+				<span class="nx">init_faces3_smooth</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">start</span><span class="p">,</span> <span class="nx">offsetNormals</span><span class="p">,</span> <span class="nx">offsetMaterials</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_triangles_smooth_uv</span><span class="p">(</span> <span class="nx">start</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">nElements</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">ntri_smooth_uv</span><span class="p">;</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">nElements</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="kd">var</span> <span class="nx">offsetNormals</span> <span class="o">=</span> <span class="nx">start</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">3</span><span class="p">;</span>
+				<span class="kd">var</span> <span class="nx">offsetUvs</span> <span class="o">=</span> <span class="nx">offsetNormals</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">3</span><span class="p">;</span>
+				<span class="kd">var</span> <span class="nx">offsetMaterials</span> <span class="o">=</span> <span class="nx">offsetUvs</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">3</span><span class="p">;</span>
+
+				<span class="nx">init_faces3_smooth</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">start</span><span class="p">,</span> <span class="nx">offsetNormals</span><span class="p">,</span> <span class="nx">offsetMaterials</span> <span class="p">);</span>
+				<span class="nx">init_uvs3</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">offsetUvs</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_quads_flat</span><span class="p">(</span> <span class="nx">start</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">nElements</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nquad_flat</span><span class="p">;</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">nElements</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="kd">var</span> <span class="nx">offsetMaterials</span> <span class="o">=</span> <span class="nx">start</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">4</span><span class="p">;</span>
+				<span class="nx">init_faces4_flat</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">start</span><span class="p">,</span> <span class="nx">offsetMaterials</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_quads_flat_uv</span><span class="p">(</span> <span class="nx">start</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">nElements</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nquad_flat_uv</span><span class="p">;</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">nElements</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="kd">var</span> <span class="nx">offsetUvs</span> <span class="o">=</span> <span class="nx">start</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">4</span><span class="p">;</span>
+				<span class="kd">var</span> <span class="nx">offsetMaterials</span> <span class="o">=</span> <span class="nx">offsetUvs</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">4</span><span class="p">;</span>
+
+				<span class="nx">init_faces4_flat</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">start</span><span class="p">,</span> <span class="nx">offsetMaterials</span> <span class="p">);</span>
+				<span class="nx">init_uvs4</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">offsetUvs</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_quads_smooth</span><span class="p">(</span> <span class="nx">start</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">nElements</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nquad_smooth</span><span class="p">;</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">nElements</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="kd">var</span> <span class="nx">offsetNormals</span> <span class="o">=</span> <span class="nx">start</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">4</span><span class="p">;</span>
+				<span class="kd">var</span> <span class="nx">offsetMaterials</span> <span class="o">=</span> <span class="nx">offsetNormals</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">4</span><span class="p">;</span>
+
+				<span class="nx">init_faces4_smooth</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">start</span><span class="p">,</span> <span class="nx">offsetNormals</span><span class="p">,</span> <span class="nx">offsetMaterials</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+		<span class="kd">function</span> <span class="nx">init_quads_smooth_uv</span><span class="p">(</span> <span class="nx">start</span> <span class="p">)</span> <span class="p">{</span>
+
+			<span class="kd">var</span> <span class="nx">nElements</span> <span class="o">=</span> <span class="nx">md</span><span class="p">.</span><span class="nx">nquad_smooth_uv</span><span class="p">;</span>
+
+			<span class="k">if</span> <span class="p">(</span> <span class="nx">nElements</span> <span class="p">)</span> <span class="p">{</span>
+
+				<span class="kd">var</span> <span class="nx">offsetNormals</span> <span class="o">=</span> <span class="nx">start</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">4</span><span class="p">;</span>
+				<span class="kd">var</span> <span class="nx">offsetUvs</span> <span class="o">=</span> <span class="nx">offsetNormals</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">4</span><span class="p">;</span>
+				<span class="kd">var</span> <span class="nx">offsetMaterials</span> <span class="o">=</span> <span class="nx">offsetUvs</span> <span class="o">+</span> <span class="nx">nElements</span> <span class="o">*</span> <span class="nx">Uint32Array</span><span class="p">.</span><span class="nx">BYTES_PER_ELEMENT</span> <span class="o">*</span> <span class="mi">4</span><span class="p">;</span>
+
+				<span class="nx">init_faces4_smooth</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">start</span><span class="p">,</span> <span class="nx">offsetNormals</span><span class="p">,</span> <span class="nx">offsetMaterials</span> <span class="p">);</span>
+				<span class="nx">init_uvs4</span><span class="p">(</span> <span class="nx">nElements</span><span class="p">,</span> <span class="nx">offsetUvs</span> <span class="p">);</span>
+
+			<span class="p">}</span>
+
+		<span class="p">};</span>
+
+	<span class="p">};</span>
+
+	<span class="kd">function</span> <span class="nx">vertex</span> <span class="p">(</span> <span class="nx">scope</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">z</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">scope</span><span class="p">.</span><span class="nx">vertices</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vertex</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector3</span><span class="p">(</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">z</span> <span class="p">)</span> <span class="p">)</span> <span class="p">);</span>
+
+	<span class="p">};</span>
+
+	<span class="kd">function</span> <span class="nx">f3</span> <span class="p">(</span> <span class="nx">scope</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">mi</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">scope</span><span class="p">.</span><span class="nx">faces</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Face3</span><span class="p">(</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">mi</span> <span class="p">)</span> <span class="p">);</span>
+
+	<span class="p">};</span>
+
+	<span class="kd">function</span> <span class="nx">f4</span> <span class="p">(</span> <span class="nx">scope</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">,</span> <span class="nx">mi</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="nx">scope</span><span class="p">.</span><span class="nx">faces</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Face4</span><span class="p">(</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">mi</span> <span class="p">)</span> <span class="p">);</span>
+
+	<span class="p">};</span>
+
+	<span class="kd">function</span> <span class="nx">f3n</span> <span class="p">(</span> <span class="nx">scope</span><span class="p">,</span> <span class="nx">normals</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">mi</span><span class="p">,</span> <span class="nx">na</span><span class="p">,</span> <span class="nx">nb</span><span class="p">,</span> <span class="nx">nc</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="kd">var</span> <span class="nx">nax</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">na</span><span class="o">*</span><span class="mi">3</span>     <span class="p">],</span>
+			<span class="nx">nay</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">na</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">],</span>
+			<span class="nx">naz</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">na</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">],</span>
+
+			<span class="nx">nbx</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nb</span><span class="o">*</span><span class="mi">3</span>     <span class="p">],</span>
+			<span class="nx">nby</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nb</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">],</span>
+			<span class="nx">nbz</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nb</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">],</span>
+
+			<span class="nx">ncx</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nc</span><span class="o">*</span><span class="mi">3</span>     <span class="p">],</span>
+			<span class="nx">ncy</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nc</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">],</span>
+			<span class="nx">ncz</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nc</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">];</span>
+
+		<span class="nx">scope</span><span class="p">.</span><span class="nx">faces</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Face3</span><span class="p">(</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span>
+						  <span class="p">[</span><span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector3</span><span class="p">(</span> <span class="nx">nax</span><span class="p">,</span> <span class="nx">nay</span><span class="p">,</span> <span class="nx">naz</span> <span class="p">),</span>
+						   <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector3</span><span class="p">(</span> <span class="nx">nbx</span><span class="p">,</span> <span class="nx">nby</span><span class="p">,</span> <span class="nx">nbz</span> <span class="p">),</span>
+						   <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector3</span><span class="p">(</span> <span class="nx">ncx</span><span class="p">,</span> <span class="nx">ncy</span><span class="p">,</span> <span class="nx">ncz</span> <span class="p">)],</span>
+						  <span class="kc">null</span><span class="p">,</span>
+						  <span class="nx">mi</span> <span class="p">)</span> <span class="p">);</span>
+
+	<span class="p">};</span>
+
+	<span class="kd">function</span> <span class="nx">f4n</span> <span class="p">(</span> <span class="nx">scope</span><span class="p">,</span> <span class="nx">normals</span><span class="p">,</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">,</span> <span class="nx">mi</span><span class="p">,</span> <span class="nx">na</span><span class="p">,</span> <span class="nx">nb</span><span class="p">,</span> <span class="nx">nc</span><span class="p">,</span> <span class="nx">nd</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="kd">var</span> <span class="nx">nax</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">na</span><span class="o">*</span><span class="mi">3</span>     <span class="p">],</span>
+			<span class="nx">nay</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">na</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">],</span>
+			<span class="nx">naz</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">na</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">],</span>
+
+			<span class="nx">nbx</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nb</span><span class="o">*</span><span class="mi">3</span>     <span class="p">],</span>
+			<span class="nx">nby</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nb</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">],</span>
+			<span class="nx">nbz</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nb</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">],</span>
+
+			<span class="nx">ncx</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nc</span><span class="o">*</span><span class="mi">3</span>     <span class="p">],</span>
+			<span class="nx">ncy</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nc</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">],</span>
+			<span class="nx">ncz</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nc</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">],</span>
+
+			<span class="nx">ndx</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nd</span><span class="o">*</span><span class="mi">3</span>     <span class="p">],</span>
+			<span class="nx">ndy</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nd</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">],</span>
+			<span class="nx">ndz</span> <span class="o">=</span> <span class="nx">normals</span><span class="p">[</span> <span class="nx">nd</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span> <span class="p">];</span>
+
+		<span class="nx">scope</span><span class="p">.</span><span class="nx">faces</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Face4</span><span class="p">(</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">,</span>
+						  <span class="p">[</span><span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector3</span><span class="p">(</span> <span class="nx">nax</span><span class="p">,</span> <span class="nx">nay</span><span class="p">,</span> <span class="nx">naz</span> <span class="p">),</span>
+						   <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector3</span><span class="p">(</span> <span class="nx">nbx</span><span class="p">,</span> <span class="nx">nby</span><span class="p">,</span> <span class="nx">nbz</span> <span class="p">),</span>
+						   <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector3</span><span class="p">(</span> <span class="nx">ncx</span><span class="p">,</span> <span class="nx">ncy</span><span class="p">,</span> <span class="nx">ncz</span> <span class="p">),</span>
+						   <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Vector3</span><span class="p">(</span> <span class="nx">ndx</span><span class="p">,</span> <span class="nx">ndy</span><span class="p">,</span> <span class="nx">ndz</span> <span class="p">)],</span>
+						  <span class="kc">null</span><span class="p">,</span>
+						  <span class="nx">mi</span> <span class="p">)</span> <span class="p">);</span>
+
+	<span class="p">};</span>
+
+	<span class="kd">function</span> <span class="nx">uv3</span> <span class="p">(</span> <span class="nx">where</span><span class="p">,</span> <span class="nx">u1</span><span class="p">,</span> <span class="nx">v1</span><span class="p">,</span> <span class="nx">u2</span><span class="p">,</span> <span class="nx">v2</span><span class="p">,</span> <span class="nx">u3</span><span class="p">,</span> <span class="nx">v3</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="kd">var</span> <span class="nx">uv</span> <span class="o">=</span> <span class="p">[];</span>
+		<span class="nx">uv</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">UV</span><span class="p">(</span> <span class="nx">u1</span><span class="p">,</span> <span class="nx">v1</span> <span class="p">)</span> <span class="p">);</span>
+		<span class="nx">uv</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">UV</span><span class="p">(</span> <span class="nx">u2</span><span class="p">,</span> <span class="nx">v2</span> <span class="p">)</span> <span class="p">);</span>
+		<span class="nx">uv</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">UV</span><span class="p">(</span> <span class="nx">u3</span><span class="p">,</span> <span class="nx">v3</span> <span class="p">)</span> <span class="p">);</span>
+		<span class="nx">where</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">uv</span> <span class="p">);</span>
+
+	<span class="p">};</span>
+
+	<span class="kd">function</span> <span class="nx">uv4</span> <span class="p">(</span> <span class="nx">where</span><span class="p">,</span> <span class="nx">u1</span><span class="p">,</span> <span class="nx">v1</span><span class="p">,</span> <span class="nx">u2</span><span class="p">,</span> <span class="nx">v2</span><span class="p">,</span> <span class="nx">u3</span><span class="p">,</span> <span class="nx">v3</span><span class="p">,</span> <span class="nx">u4</span><span class="p">,</span> <span class="nx">v4</span> <span class="p">)</span> <span class="p">{</span>
+
+		<span class="kd">var</span> <span class="nx">uv</span> <span class="o">=</span> <span class="p">[];</span>
+		<span class="nx">uv</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">UV</span><span class="p">(</span> <span class="nx">u1</span><span class="p">,</span> <span class="nx">v1</span> <span class="p">)</span> <span class="p">);</span>
+		<span class="nx">uv</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">UV</span><span class="p">(</span> <span class="nx">u2</span><span class="p">,</span> <span class="nx">v2</span> <span class="p">)</span> <span class="p">);</span>
+		<span class="nx">uv</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">UV</span><span class="p">(</span> <span class="nx">u3</span><span class="p">,</span> <span class="nx">v3</span> <span class="p">)</span> <span class="p">);</span>
+		<span class="nx">uv</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">UV</span><span class="p">(</span> <span class="nx">u4</span><span class="p">,</span> <span class="nx">v4</span> <span class="p">)</span> <span class="p">);</span>
+		<span class="nx">where</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">uv</span> <span class="p">);</span>
+
+	<span class="p">};</span>
+
+	<span class="nx">Model</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">THREE</span><span class="p">.</span><span class="nx">Geometry</span><span class="p">();</span>
+	<span class="nx">Model</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">constructor</span> <span class="o">=</span> <span class="nx">Model</span><span class="p">;</span>
+
+	<span class="nx">callback</span><span class="p">(</span> <span class="k">new</span> <span class="nx">Model</span><span class="p">(</span> <span class="nx">texturePath</span> <span class="p">)</span> <span class="p">);</span>
+
+<span class="p">};</span>
+
+</pre></div>             </td>           </tr>                </tbody>     </table>   </div> </body> </html> 
